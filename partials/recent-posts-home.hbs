@@ -3,14 +3,14 @@
  <section id="blog" class="wrapper style2 posts">
                         <div class="inner">
                             <h2>Recent Ramblings</h2>
-{{#get "posts" limit="7" filter="id:-{{post.id}}" as |recents|}}
+{{#get "posts" limit="4" filter="id:-{{post.id}}" as |recents|}}
 
                         {{#foreach posts}}
                         <div class="col-md-4">
                         <article class="feeditem">
                             
                             {{#if feature_image}}
-                            <a href="{{url}}" class="fit image"><img src="{{img_url feature_image}}" alt="{{title}}" /></a>
+                            <a href="{{url}}" class="image homepage"><img style="max-height: 150px !important;" src="{{img_url feature_image}}" alt="{{title}}" /></a>
                             {{/if}}
                             <header>
                                 <span class="date">{{date format="MMM D, YYYY"}}</span>
@@ -22,7 +22,7 @@
                             </ul>
                         </article>
                         </div>
-                        {{/foreach}}    {{pagination}}
+                        {{/foreach}}    
                                                 {{/get}}
 
 

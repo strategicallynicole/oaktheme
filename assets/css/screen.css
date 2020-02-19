@@ -3303,7 +3303,9 @@ input, select, textarea {
         .wrapper.style2 {
             background-color: #563a82;
         }
-
+.homepage {
+    max-height: 150px !important;
+}
         .wrapper.style2-alt {
             background-color: #7254c9;
         }
@@ -3313,7 +3315,12 @@ input, select, textarea {
         }
 
         .wrapper.style3-alt {
-            background-color: #8A51C3;
+            background-color: #6A3C98;
+            background-attachment: fixed;
+            background-image: url("../images/wavesingray.svg");
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: fill;
         }
 
         .wrapper.fullscreen {
@@ -4171,6 +4178,7 @@ background-size: cover;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
 
         #intro p {
             font-size: 1.25em;
