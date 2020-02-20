@@ -2901,7 +2901,7 @@ input, select, textarea {
 
             ul.menu > li {
                 border-left: 0;
-                display: block;
+                display: inline-block;
                 line-height: inherit;
                 margin: 0.5em 0 0 0;
                 padding-left: 0;
@@ -3293,7 +3293,7 @@ input, select, textarea {
         }
 
         .wrapper.style1 {
-            background-color: #6A3C98;
+            background-color: #5f2d78;
         }
 
         .wrapper.style1-alt {
@@ -3802,7 +3802,6 @@ input, select, textarea {
         font-size: 0.7em;
         font-weight: 400;
         letter-spacing: 0.25em;
-        line-height: .6em;
         outline: 0;
         padding: 0;
         position: relative;
@@ -4222,14 +4221,14 @@ section.posts {
     padding: 40px 0;
 }
 p.summary {
-    min-height: 150px;
+   /* min-height: 150px;*/
 }
 section.posts header h2 {
     font-size: 20px;
 }
 section.posts .col-md-4 {
-    width: 33%;
-    display: inline-block;
+    width: 32%;
+    display: inline-flex;
     padding: 0px 20px;
 }
 section.posts .col-md-4:last-child {
