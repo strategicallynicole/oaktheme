@@ -5,6 +5,19 @@
 ///
 
 /* Wrapper (main) */
+///
+/// Hyperspace by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+  .wrapper.style3-alt {
+	background-color: #6A3C98;
+	background-attachment: fixed;
+	background-image: url("../images/wavesingray.svg");
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: fill;
+}
 
 	#wrapper {
 		#sidebar + & {

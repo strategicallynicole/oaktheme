@@ -3589,7 +3589,7 @@ input, select, textarea {
         height: 100vh;
         left: 0;
         overflow-x: hidden;
-        overflow-y: auto;
+        overflow-y: hidden;
         position: fixed;
         text-align: right;
         top: 0;
@@ -3853,6 +3853,7 @@ input, select, textarea {
                 -webkit-transform: translateY(0);
                 -ms-transform: translateY(0);
                 transform: translateY(0);
+                line-height: .7em !important;
                 -moz-transition: opacity 0.15s ease, -moz-transform 0.75s ease;
                 -webkit-transition: opacity 0.15s ease, -webkit-transform 0.75s ease;
                 -ms-transition: opacity 0.15s ease, -ms-transform 0.75s ease;
@@ -4157,8 +4158,8 @@ input, select, textarea {
         @media screen and (max-width: 736px) {
 
             #sidebar {
-                display: none;
-            }
+               /* display: none;
+         */   }
 
         }
 
