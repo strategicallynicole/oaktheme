@@ -4428,19 +4428,22 @@ input, select, textarea {
 /* Intro */
 #footer {
 background-attachment: fixed;
-/*background-image: url("../images/wavesingray.svg");*/
-background-color: #fff !important;
-color: #140a23 !important; 
+background-image: url("../images/wavesingray.svg");
+color: rgba(95, 45, 120, 0.85714);
 background-position: top right;
 background-repeat: no-repeat;
 background-size: cover;
 }
     #intro {
-        background-attachment: fixed;
+       /* background-attachment: fixed;
         background-image: url("../images/wavesingray.svg");
         background-position: top right;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
+
+        /*background-image: url("../images/wavesingray.svg");*/
+background-color: #fff !important;
+color: #140a23 !important; 
     }
 
 
