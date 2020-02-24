@@ -46,8 +46,8 @@ animation*/
   border-width: 0.01em;
   border-style: solid;
   position: absolute;
-  -webkit-animation: wave 4000ms infinite alternate;
-          animation: wave 4000ms infinite alternate;
+  -webkit-animation: wave 1500ms infinite alternate;
+          animation: wave 1500ms infinite alternate;
   -webkit-transform: rotate(-45.5deg);
           transform: rotate(-45.5deg);
 }
@@ -246,8 +246,8 @@ animation*/
   height: 0.25em;
   bottom: -0.125em;
   right: 2.375em;
-  -webkit-animation-delay: 4000ms;
-          animation-delay: 4000ms;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
   border-color: transparent transparent rgba(95, 45, 120, 0.04762) rgba(95, 45, 120, 0.04762);
   border-radius: 0.25em;
 }
@@ -3806,6 +3806,7 @@ input, select, textarea {
 
             #sidebar + #wrapper {
                 padding-top: 0;
+                display: none;
             }
 
         }
@@ -4472,7 +4473,7 @@ color: #140a23 !important;
                     font-size: 1em;
                 }
                 .site-logo {
-                    max-width: 140px;
+                    max-width: 70px;
                 }
 
             }
