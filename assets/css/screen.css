@@ -4568,7 +4568,7 @@ input[type="submit"].primary, input[type="reset"].primary, input[type="button"].
     transition: border-color 0.2s ease;
     background-color: transparent;
     border: solid 1px !important;
-    border-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.15);
     border-radius: 3em;
     cursor: pointer;
     display: inline-block;
