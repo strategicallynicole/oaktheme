@@ -4447,7 +4447,7 @@ background-size: cover;
         background-image: url("../images/warriorprincess.svg");
         background-position: top right;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 65vh;
 
         /*background-image: url("../images/wavesingray.svg");*/
 background-color: #fff !important;
