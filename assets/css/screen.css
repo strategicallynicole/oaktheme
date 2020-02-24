@@ -3853,7 +3853,7 @@ input, select, textarea {
         background-image: url("../images/sidebarbg.svg");
         background-position: auto;
         background-repeat: no-repeat;
-        background-size: fit;        
+        background-size: contain;        
         cursor: default;
         height: 100vh;
         left: 0;
