@@ -12,7 +12,10 @@ animation*/
   box-sizing: border-box;
 }
 
-
+.darkish {
+    color: #140a23 !important; 
+    border-color: #140a23;
+}
 
 .bodyofcontainer {
   width: 100%;
