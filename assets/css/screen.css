@@ -4465,6 +4465,10 @@ color: #140a23 !important;
                     display: none;
                 }
 
+                #intro {
+                    background-size: 60% !important;
+                }
+
             }
 
             @media screen and (max-width: 736px) {
@@ -4474,6 +4478,10 @@ color: #140a23 !important;
                 }
                 .site-logo {
                     max-width: 70px;
+                }
+
+                #intro {
+                    background-size: 50% !important;
                 }
 
             }
