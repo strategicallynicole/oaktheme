@@ -3588,7 +3588,8 @@ input, select, textarea {
         background-image: url("../images/sidebarbg.svg");
         background-position: auto;
         background-repeat: no-repeat;
-        background-size: cover;        cursor: default;
+        background-size: contain;        
+        cursor: default;
         height: 100vh;
         left: 0;
         overflow-x: hidden;
@@ -4169,7 +4170,8 @@ input, select, textarea {
 /* Intro */
 #footer {
 background-attachment: fixed;
-background-image: url("../images/wavesingray.svg");
+/*background-image: url("../images/wavesingray.svg");*/
+background-color: #fff;
 background-position: top right;
 background-repeat: no-repeat;
 background-size: cover;
