@@ -4435,10 +4435,10 @@ input, select, textarea {
 #footer {
 background-attachment: fixed;
 background-image: url("../images/wavesingray.svg");
-color: rgba(95, 45, 120, 0.85714);
+color: #fff;
 background-position: top right;
 background-repeat: no-repeat;
-background-size: cover;
+background-size: contain;
 }
     #intro {
         background-attachment: fixed;
