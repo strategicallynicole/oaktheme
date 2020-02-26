@@ -41,12 +41,12 @@
 				<g class="st1">
 					<rect x="-5" y="-24" class="st2" width="1026" height="1521.4"/>
 					
-						<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="17.7051" y1="1554.3099" x2="17.7051" y2="3086.8899" gradientTransform="matrix(1 0 0 -1 0 3056.8999)">
+						<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="21.7051" y1="1554.3099" x2="21.7051" y2="3086.8899" gradientTransform="matrix(1 0 0 -1 0 3056.8999)">
 						<stop  offset="0" style="stop-color:#AF206E"/>
 						<stop  offset="0.55" style="stop-color:#E34256"/>
 						<stop  offset="1" style="stop-color:#EB8B23"/>
 					</linearGradient>
-					<rect x="-5" y="-30" class="st3" width="45.5" height="1532.6"/>
+					<rect x="-1" y="-30" class="st3" width="45.5" height="1532.6"/>
 					<g class="st4">
 						<g class="st5">
 							<polygon class="st6" points="-54.7,230.4 -54.7,230.4 -54.7,237.4 -54.7,237.4 							"/>
