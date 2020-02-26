@@ -6,7 +6,7 @@ OAKWAVE
 
 
 /*
-animation*/
+animation
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 * {
   box-sizing: border-box;
@@ -265,7 +265,7 @@ animation*/
             transform: rotate(235deg);
   }
 }
-
+*/
 
 label#label-email-3db4f5fb-fd5d-49c1-a348-106ce1fe0400 {
     padding-top: 10px;
