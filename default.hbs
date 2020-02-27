@@ -13,7 +13,8 @@
 
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
-    
+    {{> site-header }}
+
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
@@ -30,12 +31,6 @@
         {{!-- The footer at the very bottom of the screen --}}    
         <!-- Footer -->
             {{> site-footer }}
-
-
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6942704.js"></script>
-<!-- End of HubSpot Embed Code -->
-
     {{!-- The big email subscribe modal content --}}
     {{#if @labs.members}}
     <div class="subscribe-success-message">
