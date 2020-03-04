@@ -4,6 +4,10 @@
 OAKWAVE
 */
 
+.hs-form-3db4f5fb-fd5d-49c1-a348-106ce1fe0400_0dba34f9-ceac-44a6-9d73-a7a5bd0655fb .hs-form-field label:not(.hs-error-msg) {
+    color: #fff !important;
+}
+
 label#label-email-3db4f5fb-fd5d-49c1-a348-106ce1fe0400 {
     padding-top: 10px;
 }
@@ -19,8 +23,7 @@ label#label-message-3db4f5fb-fd5d-49c1-a348-106ce1fe0400 {
 .hubspot-link-text {
     display: none !important;
 }
-
-input.hs-button.primary.large {
+.hs-button, input.hs-button.primary.large {
     -moz-appearance: none !important;
     -webkit-appearance: none !important;
     -ms-appearance: none !important;
@@ -48,7 +51,7 @@ input.hs-button.primary.large {
     white-space: nowrap !important;
 }
 
-input.hs-button.primary.large:after
+input.hs-button.primary.large:after, .hs-button:after
         {
             -moz-transform: scale(0.25) !important;
             -webkit-transform: scale(0.25) !important;
@@ -73,7 +76,7 @@ input.hs-button.primary.large:after
             width: 100% !important;
         }
 
-        input.hs-button.primary.large {
+        input.hs-button.primary.large, .hs-button {
             margin-right: 0.75em !important;
         }
 .xxl {
