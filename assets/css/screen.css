@@ -3567,10 +3567,10 @@ input, select, textarea {
             background-color: #563a82;
         }
         .wrapper.style4 {
-            background-image: -moz-linear-gradient(to top, #5f2d78, #AF206E);
-            background-image: -webkit-linear-gradient(to top, #5f2d78, #AF206E);
-            background-image: -ms-linear-gradient(to top, #5f2d78, #AF206E);
-            background-image: linear-gradient(to top, #5f2d78, #AF206E);
+            background-image: -moz-linear-gradient(to top, #5f2d78, #AF206E) !important;
+            background-image: -webkit-linear-gradient(to top, #5f2d78, #AF206E) !important;
+            background-image: -ms-linear-gradient(to top, #5f2d78, #AF206E) !important;
+            background-image: linear-gradient(to top, #5f2d78, #AF206E) !important;
         }
 .homepage {
     max-height: 150px !important;
