@@ -3296,10 +3296,6 @@ input, select, textarea {
             }
 
         }
-
-        .50percent {
-            max-width: 50% !important;
-        }
 /* Spotlights */
 
     .spotlights > section {
@@ -4505,9 +4501,9 @@ section.posts {
     flex-wrap: wrap;
     padding: 40px 0;
 }
-p.summary {
-   /* min-height: 150px;*/
-}
+/* p.summary {
+   min-height: 150px;
+}*/
 section.posts header h2 {
     font-size: 20px;
 }
@@ -6609,10 +6605,9 @@ input[type="submit"].primary, input[type="reset"].primary, input[type="button"].
     font-weight: 600;
     transition: color .2s ease-in-out
 }
-
+/* 
 .post-full-content .kg-bookmark-container:hover .kg-bookmark-title {
-  /*  color: #3eb0ef */
-}
+} */
 
 .kg-bookmark-description {
     display: -webkit-box;
@@ -6667,7 +6662,7 @@ display: hidden;
     max-width: 240px;
     line-height: 1.5em;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
     display: none;
 }
 
@@ -6720,10 +6715,10 @@ display: none;
         display: none;
     }
 
-    .kg-bookmark-content {
-    }
+    /* .kg-bookmark-content {
+    } */
 }
-*/}
+
 .author-header {
     display: flex;
     flex-direction: row;
@@ -6790,9 +6785,9 @@ display: none;
     font-weight: 600
 }
 
-.no-image .author-social-link a {
-    /* color: #15171a */
-}
+/* .no-image .author-social-link a {
+    /* color: #15171a 
+} */
 
 .author-social-link a:hover {
     opacity: 1
@@ -6814,11 +6809,10 @@ display: none;
     opacity: .6
 }
 
-.no-image .author-location+.author-stats:before,
+/* .no-image .author-location+.author-stats:before,
 .no-image .author-social-link+.author-social-link:before,
 .no-image .author-stats+.author-social-link:before {
-    /* color: #738a94 */
-}
+    /* color: #738a94  */
 
 @media (max-width:500px) {
     .author-header {
@@ -7133,11 +7127,11 @@ display: none;
     align-items: center;
     font-size: 1.3rem
 }
-
+/* 
 .site-footer-content,
 .site-footer-content a {
-    /* color: hsla(0, 0%, 100%, .7) */
-}
+    /* color: hsla(0, 0%, 100%, .7) 
+} */
 
 .site-footer-content a:hover {
     /* color: #fff; */
@@ -7180,10 +7174,10 @@ display: none;
 }
 
 @media (prefers-color-scheme:dark) {
-    body {
+    /* body {
         /* color: hsla(0, 0%, 100%, .75); */
-        /* background: #191b1f */
-    }
+        /* background: #191b1f 
+    } */
 
     .feeditem > a > img {
         opacity: .6
