@@ -15,6 +15,11 @@ label#label-message-3db4f5fb-fd5d-49c1-a348-106ce1fe0400 {
     padding-top: 10px;
  
 }
+
+.hubspot-link-text {
+    display: none !important;
+}
+
 input.hs-button.primary.large {
     -moz-appearance: none;
     -webkit-appearance: none;
