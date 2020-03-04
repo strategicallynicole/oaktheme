@@ -3562,7 +3562,9 @@ input, select, textarea {
         .wrapper.style1-alt {
             background-color: #5f2d78;
         }
-
+input.hs-button.primary.large {
+    color: #000000 !important;
+}
         .wrapper.style2 {
             background-color: #563a82;
         }
