@@ -89,6 +89,7 @@
         }
     },
     "dependencies": {
-        "animate.css": "^3.7.2"
+        "animate.css": "^3.7.2",
+        "vivus": "^0.4.5"
     }
 }
