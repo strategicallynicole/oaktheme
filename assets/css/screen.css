@@ -4,18 +4,24 @@
 OAKWAVE
 */
 
-[class$="hs-form-field"] {
+object#needtotalk {
+    max-width: 40%;
+    float: right;
+}
+
+[class$="hs-form-field"], [class$="hs-form-field*"] {
     color: #fff !important;
 }
 
-[class$="label#label-"] {
+[class$="label#label-"], [class$="label#label-*"] {
     padding-top: 10px !important;
 }
 
 .hubspot-link-text {
     display: none !important;
 }
-[class$="hs-button"], [class$="input.hs-button"] {
+
+input.hs-button.primary.large, [class$="hs-button"], [class$="input.hs-button"] {
     -moz-appearance: none !important;
     -webkit-appearance: none !important;
     -ms-appearance: none !important;
@@ -43,7 +49,7 @@ OAKWAVE
     white-space: nowrap !important;
 }
 
-[class$="hs-button"]:after, [class$="input.hs-button"]:after 
+input.hs-button.primary.large, [class$="hs-button"]:after, [class$="input.hs-button"]:after 
         {
             -moz-transform: scale(0.25) !important;
             -webkit-transform: scale(0.25) !important;
@@ -68,9 +74,13 @@ OAKWAVE
             width: 100% !important;
         }
 
-        input.hs-button.primary.large, .hs-button {
+        input.hs-button.primary.large, input.hs-button.primary.large, .hs-button {
             margin-right: 0.75em !important;
         }
+
+        .hs-form-3db4f5fb-fd5d-49c1-a348-106ce1fe0400_e9e4ab7f-4e9e-4805-8f71-180fc849c6fb .hs-form-field label:not(.hs-error-msg) {
+    color: #33475b;
+}
 .xxl {
     font-size: 4.75em !important;
 }
