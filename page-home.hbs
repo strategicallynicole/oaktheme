@@ -4,12 +4,6 @@ into the {body} of the default.hbs template --}}
 <!-- Sidebar -->
 
       {{> sidebar-home }}
-<object id="needtotalk" type="image/svg+xml" data="{{asset 'images/needtotalk.svg'}}"></object>
-
-<script>
-  new Vivus('needtotalk', { duration: 200,     type: 'delayed',
-    animTimingFunction: Vivus.EASE }, myCallback);
-</script>
         <!-- Wrapper -->
             <div id="wrapper">
 
@@ -17,7 +11,12 @@ into the {body} of the default.hbs template --}}
                     <section id="intro" class="wrapper style1 fullscreen fade-up"> 
                         
                         <div class="inner">
-                        
+                        <object id="needtotalk" type="image/svg+xml" data="{{asset 'images/needtotalk.svg'}}"></object>
+
+<script>
+  new Vivus('needtotalk', { duration: 200,     type: 'delayed',
+    animTimingFunction: Vivus.EASE }, myCallback);
+</script>
                             <h1 class="xxl">Hi.</h1>
                             <p class="xl">We need to talk.</p>
                             <p class="xl"> It's about your <span class="highlight">marketing</span>.</p>
