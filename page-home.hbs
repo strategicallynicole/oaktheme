@@ -4,8 +4,8 @@ into the {body} of the default.hbs template --}}
 <!-- Sidebar -->
 
       {{> sidebar-home }}
- <div style="text-align: right; max-width: 20%; margin-right: 0;">    <object id="needtotalk" type="image/svg+xml" data="{{asset 'images/needtotalk.svg'}}"></object></div>
-</div>
+<object id="needtotalk" type="image/svg+xml" data="{{asset 'images/needtotalk.svg'}}"></object>
+
 <script>
   new Vivus('needtotalk', { duration: 200,     type: 'delayed',
     animTimingFunction: Vivus.EASE }, myCallback);
