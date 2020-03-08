@@ -4,7 +4,7 @@
 /* Type */
 	body, input, select, textarea {
 		color: _palette(fg);
-		font-family: 'proxima-nova, sans-serif';
+		font-family: ('proxima-nova, sans-serif');
 		font-size: 16.5pt;
 		font-weight: _font(weight);
 		line-height: 1.75;
