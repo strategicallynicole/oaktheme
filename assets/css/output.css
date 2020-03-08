@@ -88,7 +88,7 @@ body {
 /* Type */
 body, input, select, textarea {
   color: rgba(255, 255, 255, 0.55);
-  font-family: "Proxima Nova, sans-serif";
+  font-family: 'proxima-nova, sans-serif';
   font-size: 16.5pt;
   font-weight: 300;
   line-height: 1.75; }
