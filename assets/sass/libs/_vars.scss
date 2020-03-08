@@ -21,12 +21,12 @@
 		sidebar-height:		3.5em,	// when <=large is active
 		inner-width:		75em
 	);
-
+	
 // Font.
 	$font: (
-		family:					('ff-tisa-web-pro', serif),
+		family:					('proxima-nova, sans-serif'),
 		family-fixed:			('Courier New', monospace),
-		weight:					normal,
+		weight:					200,
 		weight-bold:				700,
 		kerning-alt:				0.25em,
 		headerfamily:			('proxima-nova', sans-serif),
@@ -58,5 +58,9 @@
 		accent3-alt:		darken(#8A51C3, 10),
 		orange:				#EB8B23,
 		red:				#E34256,
-		pink:				#AF206E
+		pink:				#AF206E,
+		gradient1:			#EB8B23, 
+		gradient2:			#E34256, 
+		gradient3:			#AF206E,
+		icons:				#2e1a47
 	);
