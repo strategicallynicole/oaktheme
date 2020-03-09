@@ -1978,10 +1978,10 @@ table {
 
 /* Wrapper */
 .wrapper.style4 {
-  background-image: -moz-linear-gradient(to top, #5f2d78, #AF206E) !important;
-  background-image: -webkit-linear-gradient(to top, #5f2d78, #AF206E) !important;
-  background-image: -ms-linear-gradient(to top, #5f2d78, #AF206E) !important;
-  background-image: linear-gradient(to top, #5f2d78, #AF206E) !important; }
+  background-image: -moz-linear-gradient(to top, #2e1a47, #8e2052) !important;
+  background-image: -webkit-linear-gradient(to top, #2e1a47, #8e2052) !important;
+  background-image: -ms-linear-gradient(to top, #2e1a47, #8e2052) !important;
+  background-image: linear-gradient(to top, #2e1a47, #8e2052) !important; }
 
 .wrapper {
   position: relative; }
