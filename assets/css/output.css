@@ -2126,6 +2126,31 @@ object#needtotalk {
   font-weight: 500;
   line-height: 1.7em; }
 
+#intro p {
+  font-size: 1.25em; }
+
+@media screen and (max-width: 980px) {
+  #intro p br {
+    display: none; }
+
+  #intro {
+    background-size: 60% !important; } }
+@media screen and (max-width: 736px) {
+  #intro p {
+    font-size: 1em; }
+
+  .site-logo {
+    max-width: 70px; }
+
+  #intro {
+    background-size: 50% !important; } }
+@media screen and (max-width: 1280px) {
+  #intro {
+    background-attachment: scroll; }
+
+  .site-logo {
+    max-width: 150px;
+    padding-top: 0 !important; } }
 section.posts {
   display: flex;
   flex-direction: row;
