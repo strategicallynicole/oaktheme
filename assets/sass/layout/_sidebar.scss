@@ -8,12 +8,16 @@
 
 #sidebar {
   @include padding(2.5em, 2.5em);
-  background: _palette(deep);
+  background-attachment: fixed;
+  background-image: url("../images/sidebarbg-long.svg") !important;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;        
   cursor: default;
   height: 100vh;
   left: 0;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   position: fixed;
   text-align: right;
   top: 0;
