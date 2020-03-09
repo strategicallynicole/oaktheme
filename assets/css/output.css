@@ -2074,6 +2074,14 @@ object#needtotalk {
   max-width: 55%;
   float: right; }
 
+.wrapper.style3-alt {
+  background-color: #6A3C98;
+  background-attachment: fixed;
+  background-image: url("../images/wavesingray.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: fill; }
+
 .highlight {
   background: #F6CC1B;
   color: #140A23;
