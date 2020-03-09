@@ -15,7 +15,7 @@
 
                             <nav2>
                     <ul>
-                                                    <a class="scrolly" href="#"><h3 class="scrolly">Blog Tags:</h3></a>{{#get "tags" limit="all"}}{{#foreach tags}}
+                                                    <a class="scrolly" href="#"><h3 class="scrolly">Blog Tags:</h3></a>{{#get "tags" limit="5"}}{{#foreach tags}}
 
                                                     <a href="{{url absolute="true"}}" class="scrolly{{#if current}} active{{/if}}">{{name}}</a> {{/foreach}} {{/get}}
 
