@@ -2082,6 +2082,20 @@ object#needtotalk {
   background-repeat: no-repeat;
   background-size: fill; }
 
+#footer {
+  background-attachment: fixed;
+  background-image: url("../images/wavesingray.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#intro {
+  background-attachment: fixed;
+  background-image: url("../images/wavesingray.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
 .highlight {
   background: #F6CC1B;
   color: #140A23;
