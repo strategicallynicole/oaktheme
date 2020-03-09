@@ -213,7 +213,7 @@
       &:after {
         @include vendor(
           'background-image',
-          'linear-gradient(to right, #{_palette(orange)}, #{_palette(red)}, #{_palette(pink)})'
+          'linear-gradient(to right, #{_palette(gradient1)}, #{_palette(gradient2)}, #{_palette(gradient3)})'
         );
         @include vendor(
           'transition',
@@ -266,6 +266,8 @@
       @include vendor('align-items', 'stretch');
       height: inherit;
       line-height: inherit;
+      background-image: none;
+      background-attachment: none;
     }
 
     nav {
