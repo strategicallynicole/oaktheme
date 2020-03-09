@@ -2140,7 +2140,8 @@ object#needtotalk {
     font-size: 1em; }
 
   .site-logo {
-    max-width: 70px; }
+    max-width: 70px;
+    vertical-align: middle; }
 
   #intro {
     background-size: 50% !important; } }
@@ -2150,7 +2151,8 @@ object#needtotalk {
 
   .site-logo {
     max-width: 150px;
-    padding-top: 0 !important; } }
+    padding-top: 0 !important;
+    vertical-align: middle; } }
 section.posts {
   display: flex;
   flex-direction: row;
