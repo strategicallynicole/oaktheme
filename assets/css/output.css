@@ -2123,7 +2123,8 @@ object#needtotalk {
   padding-top: 1px;
   padding-bottom: 1px;
   letter-spacing: 1px;
-  font-weight: 500; }
+  font-weight: 500;
+  line-height: 1.7em; }
 
 section.posts {
   display: flex;
