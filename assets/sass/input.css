@@ -3525,7 +3525,7 @@ img {
   background-image: url("../images/sidebarbg-long.svg") !important;
   background-position: left top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 40%;
   cursor: default;
   height: 100vh;
   left: 0;
