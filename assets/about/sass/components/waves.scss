@@ -12,8 +12,9 @@ body {
   background: #bcbec0;
 }
 
-.container {
+.containerforwaves {
   position: relative;
+  float: right;
   width: $max-w;
   height: $max-w / 2;
   font-size: ($wave-size / ($max-w / 1em));

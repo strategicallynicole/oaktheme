@@ -2,8 +2,9 @@ body {
   background: #bcbec0;
 }
 
-.container {
+.containerforwaves {
   position: relative;
+  float: right;
   width: 5em;
   height: 2.5em;
   font-size: 100px;
