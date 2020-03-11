@@ -33,7 +33,12 @@
 				border: 0;
 			}
 		}
-
+.site-logo {
+	max-width: 10%;
+}
+.logo {
+	border: none;
+}
 		nav {
 			font-family: _font(family-heading);
 			font-size: 0.8em;

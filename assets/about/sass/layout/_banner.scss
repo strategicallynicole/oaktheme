@@ -62,10 +62,10 @@
 			@include vendor('transition-delay', '0.8s');
 			@include vendor('filter', 'blur(0)');
 			opacity: 1;
-			font-family: _font(family-heading);
+			font-family: _font(family);
 			font-size: 1em;
-			font-weight: _font(weight-heading);
-			letter-spacing: _font(kern-heading);
+			font-weight: _font(weight);
+			letter-spacing: _font(kerning-alt);
 			line-height: 2;
 			text-transform: uppercase;
 		}
