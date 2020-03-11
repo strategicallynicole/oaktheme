@@ -67,7 +67,7 @@
 			font-weight: _font(weight);
 			letter-spacing: _font(kerning-alt);
 			line-height: 2;
-			text-transform: uppercase;
+			text-transform: none;
 		}
 
 		@include breakpoint('<=large') {

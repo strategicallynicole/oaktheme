@@ -3154,7 +3154,7 @@ body.is-menu-visible #menu .inner {
   font-weight: 400;
   letter-spacing: 0.25em;
   line-height: 2;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 @media screen and (max-width: 1280px) {
