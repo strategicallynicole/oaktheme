@@ -5,14 +5,17 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-        {{> google }}
-		<title>Solid State by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/about/sass/main.css" />
-		<noscript><link rel="stylesheet" href="assets/about/sass/noscript.css" /></noscript>
-	</head>
+
+
+<head>
+{{> basemeta }}
+    <link rel="stylesheet" type="text/css" href="{{asset "about/css/output.css"}}" />
+    <noscript><link rel="stylesheet" href="{{asset "about/sass/noscript.css"}}" /></noscript>
+
+{{> site-header }}
+{{ghost_head}}
+</head>
+
 	<body class="is-preload">
 
 		<!-- Page Wrapper -->
