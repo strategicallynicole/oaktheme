@@ -3931,6 +3931,11 @@ body.is-preload #banner p {
 }
 
 /* Footer */
+.whitish.menu {
+  list-style: none;
+  display: inline;
+}
+
 #footer .inner {
   padding: 5em 0 3em 0 ;
   display: -moz-flex;
