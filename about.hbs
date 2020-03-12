@@ -176,21 +176,15 @@ We ceaselessly love what we do.  And if we don't, we stop doing it. </p>	<a href
 								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
 								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
 							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
+							
 						</div>
 					</section>
 
 			</div>
-
-		<!-- Scripts -->
-			<script src="{{asset "about/js/jquery.min.js"}}"></script>
-			<script src="{{asset "about/js/jquery.scrollex.min.js"}}"></script>
-			<script src="{{asset "about/js/browser.min.js"}}"></script>
-			<script src="{{asset "about/js/breakpoints.min.js"}}"></script>
-			<script src="{{asset "about/js/util.js"}}"></script>
-			<script src="{{asset "about/js/main.js"}}"></script>
-
-	</body>
+    {{> site-footer }}
+    {{> email-subscribe}}
+    {{> footer-scripts }}
+    {{{block "scripts"}}}
+    {{ghost_foot}}
+</body>
 </html>
