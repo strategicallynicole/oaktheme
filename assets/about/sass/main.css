@@ -2162,6 +2162,10 @@ input[type="radio"] + label:before {
 }
 
 /* Image */
+.md {
+  max-width: 25%;
+}
+
 .image {
   border-radius: 5px;
   border: 0;
