@@ -93,9 +93,9 @@ html {
 }
 
 body {
-  background-color: #6A3C98;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(106, 60, 152, 0.8)), to(rgba(106, 60, 152, 0.8))), url("../../images/bg.jpg");
-  background-image: linear-gradient(to top, rgba(106, 60, 152, 0.8), rgba(106, 60, 152, 0.8)), url("../../images/bg.jpg");
+  background-color: #5F2D78;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(95, 45, 120, 0.8)), to(rgba(95, 45, 120, 0.8))), url("../../images/bg.jpg");
+  background-image: linear-gradient(to top, rgba(95, 45, 120, 0.8), rgba(95, 45, 120, 0.8)), url("../../images/bg.jpg");
   background-size: auto, cover;
   background-attachment: fixed, fixed;
   background-position: center, center;
@@ -1981,7 +1981,7 @@ select {
 
 select option {
   color: #ffffff;
-  background: #6A3C98;
+  background: #5F2D78;
 }
 
 select:focus::-ms-value {
@@ -2069,7 +2069,7 @@ input[type="radio"]:checked + label:before {
   background: #ffffff;
   border-color: #ffffff;
   content: '\f00c';
-  color: #6A3C98;
+  color: #5F2D78;
 }
 
 input[type="checkbox"]:focus + label:before,
@@ -2733,7 +2733,7 @@ button:disabled,
 
 .features article {
   padding: 1.75em 1.75em 0.1em 1.75em ;
-  background-color: #7242a1;
+  background-color: #673382;
   border-radius: 5px;
   margin: 1.5em 3em 1.5em 0;
   width: calc(50% - 1.5em);
@@ -3050,7 +3050,7 @@ body {
 #header {
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  background-color: rgba(114, 66, 161, 0.95);
+  background-color: rgba(103, 51, 130, 0.95);
   height: 3.5em;
   left: 0;
   line-height: 3.5em;
@@ -3229,7 +3229,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background: rgba(106, 60, 152, 0.8);
+  background: rgba(95, 45, 120, 0.8);
   cursor: default;
   height: 100%;
   left: 0;
@@ -3416,9 +3416,9 @@ body.is-menu-visible #menu .inner {
 @media screen and (max-width: 1280px) {
   #banner {
     padding: 7em 0 8.25em 0 ;
-    background-color: #6A3C98;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(106, 60, 152, 0.8)), to(rgba(106, 60, 152, 0.8))), url("../../images/bg.jpg");
-    background-image: linear-gradient(to top, rgba(106, 60, 152, 0.8), rgba(106, 60, 152, 0.8)), url("../../images/bg.jpg");
+    background-color: #5F2D78;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(95, 45, 120, 0.8)), to(rgba(95, 45, 120, 0.8))), url("../../images/bg.jpg");
+    background-image: linear-gradient(to top, rgba(95, 45, 120, 0.8), rgba(95, 45, 120, 0.8)), url("../../images/bg.jpg");
     background-size: auto, cover;
     background-position: center, center;
     margin-bottom: -6.5em;
@@ -3509,9 +3509,9 @@ body.is-preload #banner p {
 @media screen and (max-width: 1280px) {
   #wrapper > header {
     padding: 9em 0 6.25em 0 ;
-    background-color: #6A3C98;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(106, 60, 152, 0.8)), to(rgba(106, 60, 152, 0.8))), url("../../images/bg.jpg");
-    background-image: linear-gradient(to top, rgba(106, 60, 152, 0.8), rgba(106, 60, 152, 0.8)), url("../../images/bg.jpg");
+    background-color: #5F2D78;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(95, 45, 120, 0.8)), to(rgba(95, 45, 120, 0.8))), url("../../images/bg.jpg");
+    background-image: linear-gradient(to top, rgba(95, 45, 120, 0.8), rgba(95, 45, 120, 0.8)), url("../../images/bg.jpg");
     background-size: auto, cover;
     background-position: center, 0% 30%;
     margin-bottom: -6.5em;
@@ -3545,23 +3545,23 @@ body.is-preload #banner p {
 }
 
 .wrapper {
-  background-color: #6A3C98;
+  background-color: #5F2D78;
   margin: 6.5em 0;
   position: relative;
 }
 
 .wrapper:before, .wrapper:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%236A3C98%3B' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%235F2D78%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper:before {
-  -webkit-box-shadow: inset 0 -1px 0 0 #6A3C98, 0 1px 0 0 #6A3C98;
-          box-shadow: inset 0 -1px 0 0 #6A3C98, 0 1px 0 0 #6A3C98;
+  -webkit-box-shadow: inset 0 -1px 0 0 #5F2D78, 0 1px 0 0 #5F2D78;
+          box-shadow: inset 0 -1px 0 0 #5F2D78, 0 1px 0 0 #5F2D78;
 }
 
 .wrapper:after {
-  -webkit-box-shadow: inset 0 -1px 0 0 #6A3C98, 0 1px 0 0 #6A3C98;
-          box-shadow: inset 0 -1px 0 0 #6A3C98, 0 1px 0 0 #6A3C98;
+  -webkit-box-shadow: inset 0 -1px 0 0 #5F2D78, 0 1px 0 0 #5F2D78;
+          box-shadow: inset 0 -1px 0 0 #5F2D78, 0 1px 0 0 #5F2D78;
 }
 
 .wrapper:before, .wrapper:after {
@@ -3603,93 +3603,93 @@ body.is-preload #banner p {
 }
 
 .wrapper.style2 {
-  background-color: #7242a1;
+  background-color: #673382;
 }
 
 .wrapper.style2:before, .wrapper.style2:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%237242a1%3B' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23673382%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper.style2:before {
-  -webkit-box-shadow: inset 0 -1px 0 0 #7242a1, 0 1px 0 0 #7242a1;
-          box-shadow: inset 0 -1px 0 0 #7242a1, 0 1px 0 0 #7242a1;
+  -webkit-box-shadow: inset 0 -1px 0 0 #673382, 0 1px 0 0 #673382;
+          box-shadow: inset 0 -1px 0 0 #673382, 0 1px 0 0 #673382;
 }
 
 .wrapper.style2:after {
-  -webkit-box-shadow: inset 0 -1px 0 0 #7242a1, 0 1px 0 0 #7242a1;
-          box-shadow: inset 0 -1px 0 0 #7242a1, 0 1px 0 0 #7242a1;
+  -webkit-box-shadow: inset 0 -1px 0 0 #673382, 0 1px 0 0 #673382;
+          box-shadow: inset 0 -1px 0 0 #673382, 0 1px 0 0 #673382;
 }
 
 .wrapper.style3 {
-  background-color: #7948aa;
+  background-color: #70388b;
 }
 
 .wrapper.style3:before, .wrapper.style3:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%237948aa%3B' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2370388b%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper.style3:before {
-  -webkit-box-shadow: inset 0 -1px 0 0 #7948aa, 0 1px 0 0 #7948aa;
-          box-shadow: inset 0 -1px 0 0 #7948aa, 0 1px 0 0 #7948aa;
+  -webkit-box-shadow: inset 0 -1px 0 0 #70388b, 0 1px 0 0 #70388b;
+          box-shadow: inset 0 -1px 0 0 #70388b, 0 1px 0 0 #70388b;
 }
 
 .wrapper.style3:after {
-  -webkit-box-shadow: inset 0 -1px 0 0 #7948aa, 0 1px 0 0 #7948aa;
-          box-shadow: inset 0 -1px 0 0 #7948aa, 0 1px 0 0 #7948aa;
+  -webkit-box-shadow: inset 0 -1px 0 0 #70388b, 0 1px 0 0 #70388b;
+          box-shadow: inset 0 -1px 0 0 #70388b, 0 1px 0 0 #70388b;
 }
 
 .wrapper.style4 {
-  background-color: #8150b2;
+  background-color: #783e95;
 }
 
 .wrapper.style4:before, .wrapper.style4:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%238150b2%3B' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23783e95%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper.style4:before {
-  -webkit-box-shadow: inset 0 -1px 0 0 #8150b2, 0 1px 0 0 #8150b2;
-          box-shadow: inset 0 -1px 0 0 #8150b2, 0 1px 0 0 #8150b2;
+  -webkit-box-shadow: inset 0 -1px 0 0 #783e95, 0 1px 0 0 #783e95;
+          box-shadow: inset 0 -1px 0 0 #783e95, 0 1px 0 0 #783e95;
 }
 
 .wrapper.style4:after {
-  -webkit-box-shadow: inset 0 -1px 0 0 #8150b2, 0 1px 0 0 #8150b2;
-          box-shadow: inset 0 -1px 0 0 #8150b2, 0 1px 0 0 #8150b2;
+  -webkit-box-shadow: inset 0 -1px 0 0 #783e95, 0 1px 0 0 #783e95;
+          box-shadow: inset 0 -1px 0 0 #783e95, 0 1px 0 0 #783e95;
 }
 
 .wrapper.style5 {
-  background-color: #895cb5;
+  background-color: #80449e;
 }
 
 .wrapper.style5:before, .wrapper.style5:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23895cb5%3B' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2380449e%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper.style5:before {
-  -webkit-box-shadow: inset 0 -1px 0 0 #895cb5, 0 1px 0 0 #895cb5;
-          box-shadow: inset 0 -1px 0 0 #895cb5, 0 1px 0 0 #895cb5;
+  -webkit-box-shadow: inset 0 -1px 0 0 #80449e, 0 1px 0 0 #80449e;
+          box-shadow: inset 0 -1px 0 0 #80449e, 0 1px 0 0 #80449e;
 }
 
 .wrapper.style5:after {
-  -webkit-box-shadow: inset 0 -1px 0 0 #895cb5, 0 1px 0 0 #895cb5;
-          box-shadow: inset 0 -1px 0 0 #895cb5, 0 1px 0 0 #895cb5;
+  -webkit-box-shadow: inset 0 -1px 0 0 #80449e, 0 1px 0 0 #80449e;
+          box-shadow: inset 0 -1px 0 0 #80449e, 0 1px 0 0 #80449e;
 }
 
 .wrapper.style6 {
-  background-color: #9068b8;
+  background-color: #884ba7;
 }
 
 .wrapper.style6:before, .wrapper.style6:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%239068b8%3B' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23884ba7%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper.style6:before {
-  -webkit-box-shadow: inset 0 -1px 0 0 #9068b8, 0 1px 0 0 #9068b8;
-          box-shadow: inset 0 -1px 0 0 #9068b8, 0 1px 0 0 #9068b8;
+  -webkit-box-shadow: inset 0 -1px 0 0 #884ba7, 0 1px 0 0 #884ba7;
+          box-shadow: inset 0 -1px 0 0 #884ba7, 0 1px 0 0 #884ba7;
 }
 
 .wrapper.style6:after {
-  -webkit-box-shadow: inset 0 -1px 0 0 #9068b8, 0 1px 0 0 #9068b8;
-          box-shadow: inset 0 -1px 0 0 #9068b8, 0 1px 0 0 #9068b8;
+  -webkit-box-shadow: inset 0 -1px 0 0 #884ba7, 0 1px 0 0 #884ba7;
+          box-shadow: inset 0 -1px 0 0 #884ba7, 0 1px 0 0 #884ba7;
 }
 
 .wrapper.spotlight {
@@ -3989,9 +3989,9 @@ body.is-preload #banner p {
 
 @media screen and (max-width: 1280px) {
   #footer {
-    background-color: #6A3C98;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(106, 60, 152, 0.8)), to(rgba(106, 60, 152, 0.8))), url("../../images/bg.jpg");
-    background-image: linear-gradient(to top, rgba(106, 60, 152, 0.8), rgba(106, 60, 152, 0.8)), url("../../images/bg.jpg");
+    background-color: #5F2D78;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(95, 45, 120, 0.8)), to(rgba(95, 45, 120, 0.8))), url("../../images/bg.jpg");
+    background-image: linear-gradient(to top, rgba(95, 45, 120, 0.8), rgba(95, 45, 120, 0.8)), url("../../images/bg.jpg");
     background-size: auto, cover;
     background-position: center, center;
     margin-top: -6.5em;
