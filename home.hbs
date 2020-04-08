@@ -69,9 +69,17 @@ section page-header breadcrumbs-custom-wrap bg-gradient bg-secondary-2
             <h3>thoughts & resources</h3>
             <div class="divider house-gradient house-divider"></div>
             <div class="row row-50">{{#is "home"}}
+     {{#get "posts" limit="5" filter="page:false" include="tags"}}
 
+                {{#foreach posts}}
+                
+                {{> "post-card-index"}}
+                
+                {{/foreach}}
+{{pagination}}
+      
+                        {{/get}}
                 {{#get "posts" limit="3"}}
-                {{! Loop through our featured posts }}
                 {{#foreach posts}}
                 <div class="col-md-4 col-xl-4">
 
