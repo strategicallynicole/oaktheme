@@ -30988,6 +30988,10 @@ img.logo {
   text-transform: none !important;
 }
 
+#content {
+  z-index: 99;
+}
+
 #content h3 {
   padding-top: 20px;
 }
@@ -31229,6 +31233,7 @@ img.logo {
 div#particles-js {
   height: 100% !important;
   width: 100% !important;
+  z-index: 4;
 }
 
 .gimme-some-room {
