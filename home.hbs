@@ -82,9 +82,11 @@ section page-header breadcrumbs-custom-wrap bg-gradient bg-secondary-2
                                  {{#get "posts" limit="5" filter="page:false" include="tags"}}
 
                 {{#foreach posts}}
-                
+                                                <div class="col-md-4 col-xl-4">
+
                 {{> "post-card-index"}}
-                
+                                </div>
+
                 {{/foreach}}
 {{pagination}}
       
