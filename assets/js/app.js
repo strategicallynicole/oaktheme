@@ -9,19 +9,19 @@ images.forEach(function (image) {
 
 // Include images
 let img_src = [
-    '{{asset "images/docelements/01.png"}}',
-    '{{asset "images/docelements/02.png"}}',
-    '{{asset "images/docelements/03.png"}}',
-    '{{asset "images/docelements/05.png"}}',
-    '{{asset "images/docelements/04.png"}}',
-    '{{asset "images/docelements/06.png"}}',
-    '{{asset "images/docelements/07.png"}}',
-    '{{asset "images/docelements/08.png"}}',
-    '{{asset "images/docelements/09.png"}}',
-    '{{asset "images/docelements/10.png"}}',
-    '{{asset "images/docelements/11.png"}}',
-    '{{asset "images/docelements/12.png"}}',
-    '{{asset "images/docelements/13.png"}}',
+    'https://www.oakwave.com/assets/images/docelements/01.png',
+    'https://www.oakwave.com/assets/images/docelements/02.png',
+    'https://www.oakwave.com/assets/images/docelements/03.png',
+    'https://www.oakwave.com/assets/images/docelements/04.png',
+    'https://www.oakwave.com/assets/images/docelements/05.png',
+    'https://www.oakwave.com/assets/images/docelements/06.png',
+    'https://www.oakwave.com/assets/images/docelements/07.png',
+    'https://www.oakwave.com/assets/images/docelements/08.png',
+    'https://www.oakwave.com/assets/images/docelements/09.png',
+    'https://www.oakwave.com/assets/images/docelements/10.png',
+    'https://www.oakwave.com/assets/images/docelements/11.png',
+    'https://www.oakwave.com/assets/images/docelements/12.png',
+    'https://www.oakwave.com/assets/images/docelements/13.png',
 
 ];
 
