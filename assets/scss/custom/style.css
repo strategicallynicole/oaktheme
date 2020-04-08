@@ -560,8 +560,6 @@ section {
   padding: 20px;
   z-index: 9999999;
   background: #ffffff;
-  background: -webkit-gradient(linear, right top, left top, color-stop(20%, #EB8B23), color-stop(40%, #E34256), color-stop(60%, #AF206E), color-stop(80%, #5f2d78));
-  background: linear-gradient(to left, #EB8B23 20%, #E34256 40%, #AF206E 60%, #5f2d78 80%);
   -webkit-transition: .3s all ease;
   transition: .3s all ease;
 }
