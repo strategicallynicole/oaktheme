@@ -24,7 +24,9 @@ img.logo {
     font-size: 1rem;
     text-transform: none !important;
 }
-
+#content {
+    z-index: 99;
+}
 #content h3 {
     padding-top: 20px;
 }
@@ -148,7 +150,7 @@ img.logo {
 #content li {
     padding-top: 5px;
     padding-bottom: 5px;
-    
+
     &:before {
         content: '';
         display: inline-block;
@@ -269,7 +271,9 @@ img.logo {
 div#particles-js {
     height: 100% !important;
     width: 100% !important;
+    z-index: 4;
 }
+
 .gimme-some-room {
     padding-top: 40px;
 }
