@@ -3,7 +3,8 @@
         <div class="col-sm-12">
             <h3>thoughts & resources</h3>
             <div class="divider house-gradient house-divider"></div>
-            <div class="row row-50">
+            <div class="row row-50">{{#is "home"}}
+
                 {{#get "posts" limit="3"}}
                 {{! Loop through our featured posts }}
                 {{#foreach posts}}
@@ -18,7 +19,8 @@
                 {{else}}
                 <p class="error">{{error}}</p>
                 {{/get}}
+                {{/is}}
             </div>
         </div>
-    </div><a class="button button-default button-nina" href="{{site.url}}/blog">view all blog posts</a>
+    </div><a class="button button-default button-nina" href="{{@site.url}}/blog">view all blog posts</a>
 </div>
