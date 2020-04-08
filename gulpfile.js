@@ -1,12 +1,15 @@
-const {series, watch, src, dest, parallel} = require('gulp');
+const gulp = require('gulp');
+const {series, watch, src, dest, parallel} = gulp;
 const pump = require('pump');
 
 // gulp plugins and utils
 const livereload = require('gulp-livereload');
 const postcss = require('gulp-postcss');
+const sass = require('gulp-sass');
 const zip = require('gulp-zip');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
+const babel = require('gulp-babel')
 const beeper = require('beeper');
 const fs = require('fs');
 
@@ -48,7 +51,11 @@ function css(done) {
     ];
 
     pump([
-        src('assets/css/*.css', {sourcemaps: true}),
+        src([
+            'assets/scss/custom/style.scss',
+            'assets/css/fonts.css',
+            'assets/scss/bootstrap/bootstrap.scss'
+        ], {sourcemaps: true}),
         postcss(processors),
         dest('assets/built/', {sourcemaps: '.'}),
         livereload()
@@ -59,10 +66,12 @@ function js(done) {
     pump([
         src([
             // pull in lib files first so our own code can depend on it
-            'assets/js/lib/*.js',
-            'assets/js/*.js'
+            'assets/js/script.js'
         ], {sourcemaps: true}),
         concat('casper.js'),
+        babel({
+            presets: ['@babel/preset-env']
+        }),
         uglify(),
         dest('assets/built/', {sourcemaps: '.'}),
         livereload()

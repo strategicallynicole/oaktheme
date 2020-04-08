@@ -1,55 +1,32 @@
-<article class="post-card {{post_class}} {{#unless feature_image}}no-image{{else}}{{#is "home"}}{{#has index="nth:6"}}post-card-large{{/has}}{{/is}}{{/unless}}">
 
-   
+    <article class="event-default-wrap post-classic">
+        <div class="event-default">
+          <a class="post-classic-media" href="{{url}}">
 
-    <div class="post-card-content">
+            <figure class="kg-width-wide kg-image-card event-default-image"><img class="post-card-image" srcset="{{img_url feature_image size="s"}} 300w,
+                                {{img_url feature_image size="m"}} 600w,
+                                {{img_url feature_image size="l"}} 1000w,
+                                {{img_url feature_image size="xl"}} 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy"
+                src="{{img_url feature_image size="s"}}" alt="{{title}}" />
+            </figure></a>
+            <div class="event-default-caption"><a class="button button-xs button-default button-nina"
+                    href="{{url}}">read now</a></div>
+        </div>
+        <div class="event-default-inner post-classic-body">
+            <div class="box-inline"><span
+                    class="icon novi-icon icon-md-middle icon-secondary fas fa-calendar"></span><a
+                    class="event-default-link" href="{{url}}"><time datetime="2020">{{date}}</time></a>
+                    
+                    <span class="icon novi-icon icon-md-middle icon-secondary fas fa-eye"></span><a class="event-default-link"
+                        href="{{url}}"><time datetime="2020">{{reading_time}}</time></a>
+                        
 
-        <a class="post-card-content-link" href="{{url}}">
-
-            <header class="post-card-header">
-                {{#if primary_tag}}
-                    {{#primary_tag}}
-                    <div class="post-card-primary-tag">{{name}}</div>
-                    {{/primary_tag}}
-                {{/if}}
-                <h2 class="post-card-title">{{title}}</h2>
-            </header>
-
-            <section class="post-card-excerpt">
-                {{#if feature_image}}
-                    <p>{{excerpt words="30"}}</p>
-                {{else}}
-                    <p>{{excerpt words="44"}}</p>
-                {{/if}}
-            </section>
-
-        </a>
-
-        <footer class="post-card-meta">
-            <ul class="author-list">
-                {{#foreach authors}}
-                <li class="author-list-item">
-            
-                    <div class="author-name-tooltip">
-                        {{name}}
-                    </div>
-            
-                    {{#if profile_image}}
-                    <a href="{{url}}" class="static-avatar">
-                        <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
-                    </a>
-                    {{else}}
-                    <a href="{{url}}" class="static-avatar author-profile-image">{{> "icons/avatar"}}</a>
-                    {{/if}}
-                </li>
-                {{/foreach}}
-            </ul>
-            <div class="post-card-byline-content">
-                <span>{{#has author="count:>2"}}Multiple authors{{else}}{{authors}}{{/has}}</span>
-                <span class="post-card-byline-date"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
-            </div>
-        </footer>
-
-    </div>{{!--/.post-card-content--}}
-
-</article>
+                            {{#primary_tag}}
+<span class="icon novi-icon icon-md-middle icon-secondary fas fa-tag"></span><a class="event-default-link"
+    href="{{url}}"><time datetime="2020">{{name}}</time></a>                            {{/primary_tag}}
+                     
+                        
+                        </div>
+            <h5 class="font-size-rm post-classic-title"><a class="event-default-title" href="{{url}}">{{title}}</a></h5>
+        </div>
+    </article>

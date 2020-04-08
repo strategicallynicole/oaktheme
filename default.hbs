@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html lang="{{@site.lang}}">
-{{> head }}
-<body class="is-preload">
-    {{{body}}}
-    {{> site-footer }}
-    {{> email-subscribe}}
-    {{> footer-scripts }}
-    {{{block "scripts"}}}
-    {{ghost_foot}}
-</body>
+<html class="wide wow-animation" lang="{{@site.lang}}">
+    <head>
+        <!-- Site Title-->
+        <title>{{block "page-title"}} - OAKwave Marketing &amp; Sales Strategy</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7C">
+        <link rel="stylesheet" href="{{asset "scss/bootstrap/bootstrap.css"}}">
+        <link rel="stylesheet" href="{{asset "scss/custom/style.css"}}">
+        <link rel="stylesheet" href="{{asset "css/fonts/fonts.css"}}">
+        <link rel="stylesheet" href="https://use.typekit.net/onh4qqh.css">
+
+        {{ghost_head}}
+        <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+<script async src="https://cse.google.com/cse.js?cx=016484389936014782010:peaa4ncvwfg"></script>
+{{> fbpixel}}
+{{> google-analytics}}
+{{> hotjar}}
+    </head>
+    <body class="{{body_class}}">
+        {{> "popup-schedule"}}
+        {{> "pre-loader"}}
+      {{> "ie-panel"}}
+    <div class="page">  
+<header class="{{block "header-class"}}">
+ {{{block "particles-option"}}}
+    {{> "nav"}}
+   {{{block "breadcrumbs-section"}}}
+
+        </header>
+        {{{body}}}
+
+
+    {{!> csswaves}}
+
+<section class="section text-center section-lg bg-gradient bg-secondary-2">
+    {{> wave}}
+ {{> consult}}
+
+</section>
+
+
+        {{> footer}}  
+        
+{{ghost_foot}}       
+ </div>
+ {{> hubspot}}
+    </body>
+
+    <script src="{{asset "js/core.min.js"}}"></script>
+    <script src="{{asset "js/script.js"}}"></script>
+
 </html>
