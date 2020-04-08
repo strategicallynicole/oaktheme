@@ -23,7 +23,13 @@
 {{!> hotjar}}
     </head>
     <body class="{{body_class}}">
- <header>
+        {{> "popup-schedule"}}
+        {{> "pre-loader"}}
+      {{> "ie-panel"}}
+    <div class="page">  
+<header class="{{block "header-class"}}">
+
+
         </header>
         {{{body}}}
 
