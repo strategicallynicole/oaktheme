@@ -29,7 +29,7 @@
         
 <header class="{{block "header-class"}}">
  
-    {{> "nav"}}
+    {{> nav}}
    {{{block "breadcrumbs-section"}}}
 
         </header>
@@ -50,9 +50,11 @@
 {{ghost_foot}}       
  </div>
  {{> hubspot}}
+        <script src="{{asset "js/core.min.js"}}"></script>
+    <script src="{{asset "js/script.js"}}"></script>
+    
     </body>
 
-    <script src="{{asset "js/core.min.js"}}"></script>
-    <script src="{{asset "js/script.js"}}"></script>
+
 
 </html>
