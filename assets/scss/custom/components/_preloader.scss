@@ -54,7 +54,7 @@
 @supports (-webkit-background-clip: text) {
 	.page-loader {
 		.page-loader-logo-name {
-			background: linear-gradient(to right, $primary 20%, $secondary 40%, $secondary-1 60%, $primary 80%);
+			background: linear-gradient(to left, $gradient1 20%, $gradient2 40%, $gradient3 60%, $purple2 80%);
 			background-size: 200% auto;
 			background-clip: text;
 			text-fill-color: transparent;
