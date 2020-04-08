@@ -4,7 +4,8 @@
 {{#contentFor "page-title"}}
 {{title}} | OAKwave - Sales and Marketing Strategy
 {{/contentFor}}
-
+  <div class="particles"> {{> particles-insert}}
+    </div>
 {{#contentFor "header-class"}}
 section page-header breadcrumbs-custom-wrap bg-gradient bg-secondary-2
 {{/contentFor}}
@@ -15,9 +16,7 @@ section page-header breadcrumbs-custom-wrap bg-gradient bg-secondary-2
         <p class="breadcrumbs-custom-subtitle"></p>
         <p class="heading-1 breadcrumbs-custom-title">{{title}}</p>
 
-    {{> leaf-parallax-crumbs}}
                   
-     {{> breadcrumbs}}
         
     </section>{{/contentFor}}
 
