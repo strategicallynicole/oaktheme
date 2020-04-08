@@ -15,22 +15,15 @@
               <div class="rd-navbar-aside-right">
                 <div class="rd-navbar-nav-wrap">
                   <ul class="rd-navbar-nav">
-                    <!--  {{#foreach navigation}}
-                      <li class="rd-nav-item {{#if current}}active current{{/if}}">
-                        <a class="rd-nav-link" href="{{url absolute="true"}}">{{label}}</a>
-                      </li>
-                      {{/foreach}}                  
-                    
-                    </li>
-          --><li class="rd-nav-item {{#if current}}active current{{/if}}"><a class="{{#if current}}active current{{/if}} rd-nav-link"
+                   <li class="rd-nav-item {{#if current}}active current{{/if}}"><a class="{{#if current}}active current{{/if}} rd-nav-link"
               href="{{@site.url}}">Home</a>
 
-                    <li class="rd-nav-item  {{#if current}}active current{{/if}} rd-navbar--has-dropdown rd-navbar-submenu"><a class=" {{#if current}}active current{{/if}} rd-nav-link" href="{{@site.url}}/about">About</a>
+                    <li class="rd-nav-item  {{#if current}}active current{{/if}} rd-navbar--has-dropdown rd-navbar-submenu"><a class=" {{#if current}}active current{{/if}} rd-nav-link" href="{{@site.url "about"}}">About</a>
                       <ul class="rd-menu rd-navbar-dropdown">
-                          <li class="rd-dropdown-list-item"><a class="rd-dropdown-list-link" href="{{site.url "/about#services"}}">Services</a></li>
-                                                    <li class="rd-dropdown-list-item"><a class="rd-dropdown-list-link" href="{{site.url "/events"}}">Events &amp; Classes</a></li>
+                          <li class="rd-dropdown-list-item"><a class="rd-dropdown-list-link" href="{{site.url "about#services"}}">Services</a></li>
+                                                    <li class="rd-dropdown-list-item"><a class="rd-dropdown-list-link" href="{{site.url "events"}}">Events &amp; Classes</a></li>
 
-                          <li class="rd-dropdown-list-item"><a class="rd-dropdown-list-link" href="{{site.url "/blog"}}">Blog</a></li>
+                          <li class="rd-dropdown-list-item"><a class="rd-dropdown-list-link" href="{{site.url "blog"}}">Blog</a></li>
 
                       <!--  <li class="rd-dropdown-item"><a class="rd-dropdown-list-link" href="{{site.url}}/ethos">Real Strategy without the BS</a></li>
                             <li class="rd-dropdown-list-item"><a class="rd-dropdown-list-link" href="{{site.url}}/process">Our Process</a></li>
