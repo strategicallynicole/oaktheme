@@ -72,27 +72,15 @@ section page-header breadcrumbs-custom-wrap bg-gradient bg-secondary-2
      {{#get "posts" limit="5" filter="page:false" include="tags"}}
 
                 {{#foreach posts}}
-                
-                {{> "post-card-index"}}
-                
+                                <div class="col-md-4 col-xl-4">
+
+                {{> "post-card"}}
+                </div>
                 {{/foreach}}
 {{pagination}}
       
                         {{/get}}
-                {{#get "posts" limit="3"}}
-                {{#foreach posts}}
-                <div class="col-md-4 col-xl-4">
-
-                    {{> "post-card"}}
-                </div>
-                {{else}}
-                {{! If there are no featured posts}}
-                <p>No posts!</p>
-                {{/foreach}}
-                {{else}}
-                <p class="error">{{error}}</p>
-                {{/get}}
-                {{/is}}
+             
             </div>
         </div>
     </div><a class="button button-default button-nina" href="{{@site.url}}/blog">view all blog posts</a>
