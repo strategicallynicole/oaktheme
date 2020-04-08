@@ -8,7 +8,7 @@
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                 <!-- RD Navbar Brand-->
                 <div class="rd-navbar-brand">
-                  <!--Brand--><a class="brand-name" href="{{site.url}}"><img class="logo"
+                  <!--Brand--><a class="brand-name" href="{{@site.url}}"><img class="logo"
                         src="{{asset "images/logo-white-horizontal-no-marketing.svg"}}" width="230" /></a>
                 </div>
               </div>
@@ -23,15 +23,15 @@
                     
                     </li>
           --><li class="rd-nav-item {{#if current}}active current{{/if}}"><a class="{{#if current}}active current{{/if}} rd-nav-link"
-              href="{{site.url absolute="true"}}">Home</a>
+              href="{{@site.url absolute="true"}}">Home</a>
 
-                    <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="{{site.url absolute="true"}}about">About</a>
+                    <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="{{@site.url absolute="true"}}about">About</a>
                       <ul class="rd-menu rd-navbar-dropdown">
                    <!--         <li class="rd-dropdown-list-item"><a class="rd-dropdown-list-link" href="{{site.url}}/special">Why We're Different</a></li>
 
                         <li class="rd-dropdown-item"><a class="rd-dropdown-list-link" href="{{site.url}}/ethos">Real Strategy without the BS</a></li>
                             <li class="rd-dropdown-list-item"><a class="rd-dropdown-list-link" href="{{site.url}}/process">Our Process</a></li>
-                       -->     <li class="rd-dropdown-list-item"><a class="rd-dropdown-list-link" href="{{site.url}}/blog">Blog</a></li>
+                       -->     <li class="rd-dropdown-list-item"><a class="rd-dropdown-list-link" href="{{@site.url}}/blog">Blog</a></li>
                           <!--  <li class="rd-dropdown-list-item"><a class="rd-dropdown-list-link" href="{{site.url}}/events">Events</a></li>
                          --> </ul>
                         </li>
