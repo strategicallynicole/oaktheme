@@ -146,6 +146,9 @@ img.logo {
 }
 
 #content li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
     &:before {
         content: '';
         display: inline-block;
