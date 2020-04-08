@@ -22,7 +22,6 @@
 	padding: 20px;
 	z-index: 9999999;
 	background: $white;
-	background: linear-gradient(to left, $gradient1 20%, $gradient2 40%, $gradient3 60%, $purple2 80%);
 	transition: .3s all ease;
 
 	&.loaded {
