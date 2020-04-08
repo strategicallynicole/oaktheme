@@ -9,19 +9,19 @@ images.forEach(function (image) {
 
 // Include images
 let img_src = [
-    'assets/images/docelements/01.png',
-    'assets/images/docelements/02.png',
-    'assets/images/docelements/03.png',
-    'assets/images/docelements/04.png',
-    'assets/images/docelements/05.png',
-    'assets/images/docelements/06.png',
-    'assets/images/docelements/07.png',
-    'assets/images/docelements/08.png',
-    'assets/images/docelements/09.png',
-    'assets/images/docelements/10.png',
-    'assets/images/docelements/11.png',
-    'assets/images/docelements/12.png',
-    'assets/images/docelements/13.png',
+    '{{asset "images/docelements/01.png"}}',
+    '{{asset "images/docelements/02.png"}}',
+    '{{asset "images/docelements/03.png"}}',
+    '{{asset "images/docelements/05.png"}}',
+    '{{asset "images/docelements/04.png"}}',
+    '{{asset "images/docelements/06.png"}}',
+    '{{asset "images/docelements/07.png"}}',
+    '{{asset "images/docelements/08.png"}}',
+    '{{asset "images/docelements/09.png"}}',
+    '{{asset "images/docelements/10.png"}}',
+    '{{asset "images/docelements/11.png"}}',
+    '{{asset "images/docelements/12.png"}}',
+    '{{asset "images/docelements/13.png"}}',
 
 ];
 
