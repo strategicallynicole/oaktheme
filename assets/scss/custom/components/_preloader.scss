@@ -22,7 +22,7 @@
 	padding: 20px;
 	z-index: 9999999;
 	background: $white;
-	background-image: linear-gradient(380deg, #fff 50%, #c2c2c3 100%);
+			background: linear-gradient(to left, $gradient1 20%, $gradient2 40%, $gradient3 60%, $purple2 80%);
 	transition: .3s all ease;
 
 	&.loaded {
@@ -42,7 +42,7 @@
 	.page-loader-logo-name {
 		text-transform: uppercase;
 		margin-bottom: 26px;
-		font-family: $font-family-sans-serif-3;
+		font-family: 'Oswald';
 		font-size: 24px;
 		line-height: 1;
 		font-weight: 900;

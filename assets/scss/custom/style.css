@@ -592,8 +592,8 @@ section {
 
 @supports (-webkit-background-clip: text) {
   .page-loader .page-loader-logo-name {
-    background: -webkit-gradient(linear, left top, right top, color-stop(20%, #2e1a47), color-stop(40%, #120a22), color-stop(60%, #f6cc1b), color-stop(80%, #2e1a47));
-    background: linear-gradient(to right, #2e1a47 20%, #120a22 40%, #f6cc1b 60%, #2e1a47 80%);
+    background: -webkit-gradient(linear, right top, left top, color-stop(20%, #EB8B23), color-stop(40%, #E34256), color-stop(60%, #AF206E), color-stop(80%, #5f2d78));
+    background: linear-gradient(to left, #EB8B23 20%, #E34256 40%, #AF206E 60%, #5f2d78 80%);
     background-size: 200% auto;
     background-clip: text;
     text-fill-color: transparent;
