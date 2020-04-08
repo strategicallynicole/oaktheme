@@ -548,6 +548,14 @@ h3.numbered {
 }
 }
 
+
+
+
+.rd-navbar-brand {
+    @media (max-width: 500px) {
+        display: none;
+    }
+}
 progress.reading-progress-bar {
     appearance: none;
     position: fixed;
