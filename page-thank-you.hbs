@@ -1,0 +1,46 @@
+{{!< static}}
+{{#post}}
+<script>qp('track', 'GenerateLead');</script>
+{{> static-header}}
+{{> static-menu}}
+<header class="container-fluid header">
+    <div class="bg"></div>
+    <div class="mouse-scroll"></div>
+    <div class="info-content">
+        <ul>
+            <li>hello@oakwave.com</li>
+</button>
+            <li><a href="#" data-toggle="modal" data-target="#exampleModal">schedule a consultation</a></li>
+            <li>919.823.4333</li>
+        </ul>
+    </div>
+
+      <!--   <picture>
+  <source class="ducky img-fluid float-left" srcset="{{asset "images/ducky2.webp"}}" type="image/webp">
+  <img class="ducky img-fluid float-left" src="{{asset "images/ducky2.png"}}" alt="OAKwave marketing strategy">
+</picture>-->
+
+
+    <div class="row">
+        <div class="col">
+            <h2 class="whitish"></h2>
+            <div class="extra-lg-text">
+                <span> <span class="purplish">Thank you for reaching out!</span></span><br>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<div class="container-fluid default-content">
+    <div class="row">
+        <div class="col">
+{{content}}
+</div>
+</div>
+</div>
+
+
+{{/post}}

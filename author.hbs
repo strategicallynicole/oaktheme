@@ -1,59 +1,57 @@
 {{!< default}}
-{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
 
+{{!-- Author info --}}
 {{#author}}
-{{!-- Everything inside the #author tags pulls data from the author --}}
-
-
-<header class="site-archive-header">
-    {{> site-header}}
-    {{> header-background background=cover_image}} {{!--Special header-image.hbs partial to generate the background image--}}
-        <div class="inner">
-            <div class="site-header-content author-header">
-                {{#if profile_image}}
-                    <img class="author-profile-image" src="{{profile_image}}" alt="{{name}}" />
-                {{/if}}
-                <div class="author-header-content">
-                    <h1 class="site-title">{{name}}</h1>
-                    {{#if bio}}
-                        <h2 class="author-bio">{{bio}}</h2>
-                    {{/if}}
-                    <div class="author-meta">
-                        {{#if location}}
-                            <div class="author-location">{{location}}</div>
-                        {{/if}}
-                        <div class="author-stats">
-                            {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
-                        </div>
-                        {{#if website}}
-                            <span class="author-social-link"><a href="{{website}}" target="_blank" rel="noopener">Website</a></span>
-                        {{/if}}
-                        {{#if twitter}}
-                            <span class="author-social-link"><a href="{{twitter_url}}" target="_blank" rel="noopener">Twitter</a></span>
-                        {{/if}}
-                        {{#if facebook}}
-                            <span class="author-social-link"><a href="{{facebook_url}}" target="_blank" rel="noopener">Facebook</a></span>
-                        {{/if}}
-                    </div>
-                </div>
-            </div>
+<header class="author-header">
+    {{#if profile_image}}
+        <img class="author-profile-image" src="{{profile_image}}" alt="{{name}}" />
+    {{/if}}
+    <h1><a href="{{url}}">{{name}}</a></h1>
+    {{#if bio}}
+        <p class="content">{{bio}}</p>
+    {{/if}}
+    <div class="author-meta">
+        {{#if location}}
+        <div class="author-location icon fa-map-pin">{{location}} <span class="bull">&bull;</span></div>
+        {{/if}}
+        <div class="author-stats">
+            {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}} <span class="bull">&bull;</span>
         </div>
+        {{#if website}}
+        <a href="{{url}}" class="icon fa-globe" title="Website"><span class="label">Website</span></a>
+        {{/if}}
+        {{#if twitter}}
+        <a href="{{twitter_url}}" class="icon fa-twitter" title="Twitter"><span class="label">Twitter</span></a>
+        {{/if}}
+        {{#if facebook}}
+        <a href="{{facebook_url}}" class="icon fa-facebook" title="Facebook"><span class="label">Facebook</span></a>
+        {{/if}}
+        <a href="https://feedly.com/i/subscription/feed/{{url absolute="true"}}rss/" class="icon fa-rss" target="_blank" rel="noopener"><span class="label" title="RSS">RSS</span></a>
     </div>
 </header>
 {{/author}}
 
-{{!-- The main content area --}}
-<main id="site-main" class="site-main outer">
-    <div class="inner posts">
+{{!-- Posts --}}
+<section>
 
-        <div class="post-feed">
-            {{#foreach posts}}
+    <section class="posts">
+        {{#foreach posts}}
+        <article>
+            {{#if feature_image}}
+            <a href="{{url}}" class="image fit"><img src="{{img_url feature_image}}" alt="{{title}}" /></a>
+            {{/if}}
+            <h3><a href="{{url}}">{{title}}</a></h3>
+            <p>{{excerpt words="33"}}</p>
+            <ul class="actions special">
+                <li><a href="{{url}}" class="button">Full Story</a></li>
+            </ul>
+        </article>
+        {{/foreach}}
+    </section>
 
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{> "post-card"}}
+</section>
 
-            {{/foreach}}
-        </div>
-
-    </div>
-</main>
+{{!-- Pagination --}}
+{{pagination}}

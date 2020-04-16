@@ -1,14 +1,14 @@
 routes:
-  /: home
-  /thank-you/: thank-you
-  /about/: about
+  /:
+    controller: channel
+    template: 
+      - home
 
 collections:
-  /:
-    template: home
-    permalink: /
   /blog/:
     permalink: /blog/{slug}/
+    template: 
+      - index
 
 taxonomies:
   tag: /tag/{slug}/

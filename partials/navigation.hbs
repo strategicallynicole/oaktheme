@@ -1,0 +1,18 @@
+<nav id="menu">
+    <header class="major">
+ <header id="header">
+                    <ul class="icons">
+                        <li><a href="{{facebook_url @site.facebook}}"><i class="fab fa-facebook"></i></a>
+                           </li><li><a href="https://www.linkedin.com/company/oakwave"><i class="fab fa-linkedin"></i></a>
+                         </li><li><a href="https://www.quora.com/profile/Nicole-Choman-7"><i class="fab fa-quora"></i></a>
+</li><li><a href="{{twitter_url @site.twitter}}"><i class="fab fa-twitter"></i></a>
+</li>
+                        <li><a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" class="icon fa-rss" target="_blank" rel="noopener"></a></li>
+                    </ul>
+                </header>    </header>
+    <ul class="links">
+        {{#foreach navigation}}
+        <li class="nav-{{slug}} {{#if current}}active{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>
+</nav>

@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../../../ghost/content/themes/oakwaveonghost/assets/images/docelements"
+		},
+		{
+			"path": "../../../../ghost/content/themes/oakwaveonghost/assets/images/elements"
+		},
+		{
+			"path": "../../PageStackNavigation"
+		},
+		{
+			"path": "../../AnimatedGridLayout"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "AnimatedGridLayout"
+	}
+}

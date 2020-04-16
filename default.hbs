@@ -1,59 +1,60 @@
 <!DOCTYPE html>
-<html class="wide wow-animation" lang="{{@site.lang}}">
-    <head>
-        <!-- Site Title-->
-        <title>{{block "page-title"}} - OAKwave Marketing &amp; Sales Strategy</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="HandheldFriendly" content="True" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7C">
-        <link rel="stylesheet" href="{{asset "scss/bootstrap/bootstrap.css"}}">
-        <link rel="stylesheet" href="{{asset "scss/custom/style.css"}}">
-        <link rel="stylesheet" href="{{asset "css/fonts/fonts.css"}}">
-        <link rel="stylesheet" href="https://use.typekit.net/onh4qqh.css">
-        <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
-<script async src="https://cse.google.com/cse.js?cx=016484389936014782010:peaa4ncvwfg"></script>
-{{> fbpixel}}
-{{> google-analytics}}
-{{!> hotjar}}
+<html lang="{{@site.lang}}">
+<head>
+
+    {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{!-- Base Meta --}}
+    <title>{{meta_title}} | OAKwave Marketing Strategy &amp; Sales Enablement</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{!-- Styles'n'Scripts --}}
+    {{> fbpixel}}
+    {{> quora}}
+    {{> google-analytics}}
+    {{!> hotjar}}
+    <link rel="stylesheet" type="text/css" href="{{asset "main/css/main.css"}}" />
+
+        <script src="https://kit.fontawesome.com/dd47f1ac1c.js" crossorigin="anonymous"></script>
+
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
-    </head>
-    <body>
-        {{> "popup-schedule"}}
-        {{> "pre-loader"}}
-      {{> "ie-panel"}}
-    <div class="page">  
-        
-<header class="{{block "header-class"}}">
- 
-    {{> nav}}
-   {{{block "breadcrumbs-section"}}}
 
-        </header>  
-        {{{body}}}
+</head>
+<body class="is-preload {{body_class}}">
 
-    {{!> csswaves}}
+    <div id="wrapper">
+        <main id="main">
+            <div class="inner">
 
-<section class="section text-center section-lg bg-gradient bg-secondary-2">
-    
-    {{> wave}}
- {{> consult}}
+                {{!-- Header --}}
+               
 
-</section>
+                {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+                {{{body}}}
 
-        {{> footer}}  
-        
-{{ghost_foot}}       
- </div>
- {{> hubspot}}
-        <script src="{{asset "js/core.min.js"}}"></script>
-    <script src="{{asset "js/script.js"}}"></script>
-    
-    </body>
+            </div>
+        </main>
+
+        {{!-- The left sidebar - partials/sidebar.hbs --}}
+        {{> sidebar}}
+
+    </div>
+{{> hubspot}}
+    {{!-- Theme Scripts --}}
+    <script src="{{asset "main/js/jquery.min.js"}}"></script>
+    <script src="{{asset "main/js/browser.min.js"}}"></script>
+    <script src="{{asset "main/js/breakpoints.min.js"}}"></script>
+    <script src="{{asset "main/js/util.js"}}"></script>
+    <script src="{{asset "main/js/main.js"}}"></script>
+    <script src="{{asset "home/js/modal.js"}}"></script>
 
 
+    {{!-- Ghost outputs important scripts & data with the {ghost_foot} tag
+    it should always be the very last thing before the closing body tag --}}
+    {{ghost_foot}}
 
+</body>
 </html>

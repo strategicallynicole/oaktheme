@@ -1,0 +1,26 @@
+{{!< default}}
+
+{{#contentFor "page-title"}}
+Blog
+{{/contentFor}}
+{{#contentFor "hero-line-1"}}
+an overly opinionated blog
+{{/contentFor}}
+{{#contentFor "hero-line-2"}}
+is always the answer 
+{{/contentFor}}
+
+
+<div class="container-fluid blog-section">
+    <div class="row">
+        <div class="col">
+            {{#get "posts" limit="5" filter="page:false" include="tags"}}
+                {{#foreach posts}}
+                    {{> "_post-box"}}
+                {{/foreach}}
+                {{pagination}}
+            {{/get}}
+        </div>
+    </div>
+</div>
+{{> cta}}

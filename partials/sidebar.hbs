@@ -1,0 +1,56 @@
+<div id="sidebar">
+    <div class="inner">
+
+
+        {{!-- Recent posts --}}
+        <section>
+           <div class="container">
+             <p style="text-align: center;">   <a class="logolink" href="{{@site.url}}"><img src="{{asset "/images/horizontalwhiteandpurple.svg"}}" width="250" class="sidelogo" alt="marketing strategy" /></a>
+ <a class="btn-link" href="{{@site.url}}"> <i class="fa fa-arrow-left"></i>
+ back to homepage
+</a>   </span></p>  </div> 
+  
+  
+  {{!-- Nav - partials/navigation.hbs --}}
+        {{#if @site.navigation}}
+            {{navigation}}
+        {{/if}}
+        </section><section>     <div class="gimme-some-room" style="text-align: center;">             <a  style="align-items: center; text-align: center;" class="lm-btn btn-small btn" target="_blank" href="https://meetings.hubspot.com/oakwave/consultation">schedule a call</a></div>
+ <div class="gimme-some-room" style="padding-top:30px"></div>
+
+                <h2 class="whitish">Recent Posts</h2>
+            <div class="mini-posts">
+                {{!-- We're just grabbing the 3 latest posts here but you can change
+                this to filter for a specific tag or order depending on what you want.
+                More info: https://docs.ghost.org/api/handlebars-themes/helpers/get/ --}}
+                {{#get "posts" limit="2" as |mini_post|}}
+                    {{#foreach mini_post}}
+                    <article>
+                        <h3><a href="{{url}}">{{title}}</a></h3>
+                      <a href="{{url}}">  <p class="whitish">{{excerpt words="15"}}</p></a>
+                    </article>
+                    {{/foreach}}
+                {{/get}}
+            </div>
+        </section>
+<!--
+<script async src="https://cse.google.com/cse.js?cx=016484389936014782010:peaa4ncvwfg"></script>
+<div class="gcse-search"></div>-->
+
+        {{!-- Footer --}}
+        <footer id="footer">
+
+<h3> get updates by email </h3>               <p>   <small>we promise to only send the juciest of emails.  seriously.  our emails rock.</small></p>
+<div style="width: 95%;">
+           <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+<script>
+  hbspt.forms.create({
+	portalId: "6942704",
+	formId: "5eb99b16-2a74-4a05-99e7-a70bb0b34e2b"
+});
+</script></div>
+            <p class="copyright">&copy; {{@site.title}} - All rights reserved<br>
+        </footer>
+
+    </div>
+</div>

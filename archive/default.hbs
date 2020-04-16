@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{block "page-title"}}</title>
+        <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}">
+<script src="https://kit.fontawesome.com/dd47f1ac1c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}">
+
+        {{ghost_head}}
+    </head>
+    <body>
+        <div class="menu-toggle sm">
+            <div class="icon"></div>
+        </div>
+        {{> _menu}}
+        {{> _social-menu}}
+        <header class="container-fluid header">
+            <div class="bg"></div>
+            <div class="mouse-scroll"></div>
+            <div class="info-content">
+                <ul>
+                    <li>hello@oakwave.com</li>
+                    <li>
+<button type="button" class="btn lm-btn primary lm-sm" data-toggle="modal" data-target="#schedule-a-consultation">
+  schedule a call
+</button>               </li>     <li>919.823.4333</li>
+                </ul>
+            </div>
+            <div class="row">
+                 <div class="col">
+                    <div class="extra-lg-text">
+                        <span>{{block "heroLine1"}}</span><br>
+                        <span>{{block "heroLine2"}}</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        {{{body}}}
+        {{> _footer}}
+                <script src="{{asset "js/jquery.min.js"}}"></script>
+        <script src="{{asset "js/popper.min.js"}}"></script>
+           <script src="{{asset "js/main.js"}}"></script>
+            <script src="{{asset "js/bootstrap.min.js"}}"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modalmanager.min.js"></script>
+        <script src="{{asset "js/modal.js"}}"></script>
+
+        <script src="{{asset "js/anime.min.js"}}"></script>
+
+        <script src="{{asset "js/scrollreveal.min.js"}}"></script>
+        {{ghost_foot}}
+    </body>
+</html>

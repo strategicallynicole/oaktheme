@@ -1,0 +1,18 @@
+<a class="grid__item" href="#">
+						<h2 class="title title--preview">{{title}}</h2>
+						<div class="loader"></div>
+						<div class="meta meta--preview">
+							<img class="meta__avatar post-card-image" srcset="{{img_url feature_image size="s"}} 300w,
+                    {{img_url feature_image size="m"}} 600w,
+                    {{img_url feature_image size="l"}} 1000w,
+                    {{img_url feature_image size="xl"}} 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy"
+    src="{{img_url feature_image size="m"}}" width="100" alt="{{title}}" /> 
+    						  {{#if primary_tag}}
+    {{#primary_tag}}
+      <span class="category"><span class="icon icon-md icon-primary fas fa-tag"></span>{{name}}</span>
+  {{/primary_tag}}<br />
+  {{/if}}
+							<span class="meta__date"><i class="fa fa-calendar-o"></i>{{date}}</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i>{{reading_time}}</span>
+						</div>
+					</a>
