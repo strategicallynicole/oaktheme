@@ -3,13 +3,13 @@
 $(window).on("load", function() {
     // Animation using ScrollReveal
     // Selecting objects to be animated
-    var animatedList1 = '.lg-text, .lg-text span, .boxy .title, .post-box .title, .post-header .title, .boxy .slg-text';
+    var animatedList1 = '.svcs1, .svcs6, .lg-text, .lg-text span, .boxy .title, .post-box .title, .post-header .title, .boxy .slg-text';
 
-    var animatedList2 = '.shitake, .boxy .text li, .boxy .bottom-text .link, .boxy .bottom-text .text';
+    var animatedList2 = '.svcs2, .svcs3, .shitake, .boxy .text li, .boxy .bottom-text .link, .boxy .bottom-text .text';
 
-    var animatedList3 = '.normal-lg-text p, .clients-logos .logo-holder, .text-box .title, .text-box p, .team-photos, .post-box, .post-header, .post-content';
+    var animatedList3 = '.svcs4, .svcs5, .normal-lg-text p, .clients-logos .logo-holder, .text-box .title, .text-box p, .team-photos, .post-box, .post-header, .post-content';
 
-    var animatedList4 = '.clients-logos .logo-holder, .cr-btn, .footer .contact-info-holder, .few-contact .contact-info-holder, .job-box .title, .job-box .subtitle, .people-box .title, .people-box .subtitle, .post-box .text, .post-header .text, .post-content h1, .post-content p, .social-row .social-link-holder, .project-info h2, .project-imgs .img-holder';
+    var animatedList4 = '.svcs6, .clients-logos .logo-holder, .cr-btn, .footer .contact-info-holder, .few-contact .contact-info-holder, .job-box .title, .job-box .subtitle, .people-box .title, .people-box .subtitle, .post-box .text, .post-header .text, .post-content h1, .post-content p, .social-row .social-link-holder, .project-info h2, .project-imgs .img-holder';
 
     // Every list will have different animation
     ScrollReveal().reveal(animatedList1,{ duration: 800, distance: '50px', interval: 100});

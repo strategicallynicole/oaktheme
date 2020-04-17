@@ -389,7 +389,7 @@ body {
 }
 .wow {
     visibility: hidden;
-    
+
   }
 
 
@@ -901,7 +901,7 @@ body {
 }
 
 .footercolms {
-max-width: 33.33% !important;
+max-width: 33.33%;
 }
 /* -----------------------------------
     4 - Features Styles
@@ -2085,6 +2085,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         max-width: 15%;
     }
 
+
 .cnav .logo-bg {
     display: none !important;
     
@@ -2154,6 +2155,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         
     }
 
+    .footercolms {
+        max-width: 100%;
+        width: 100%;
+        }
 
 
     .lg-text {
@@ -2450,8 +2455,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         right: 3rem;
     }
     .cnav .logo-bg {
-        display: none !important;
+        max-width: 14.9rem;
+        background: #000;
         
+    }
+
+
+.footercolms {
+    max-width: 100%;
+    width: 100%;
     }
 
     .main-menu {
