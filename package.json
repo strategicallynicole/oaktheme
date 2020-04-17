@@ -64,6 +64,8 @@
         "posts_per_page": 6
     },
     "dependencies": {
+        "imagemin": "^7.0.1",
+        "imagemin-webp": "^5.1.0",
         "sass": "^1.26.3"
     }
 }

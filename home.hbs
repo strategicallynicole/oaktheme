@@ -6,10 +6,10 @@
     <div class="mouse-scroll"></div>
     <div class="info-content">
         <ul>
-            <li>hello@oakwave.com</li>
+            <li><a href="mailto:hello@oakwave.com">hello@oakwave.com</a></li>
 </button>
             <li><a href="#" data-toggle="modal" data-target="#exampleModal">schedule a consultation</a></li>
-            <li>919.823.4333</li>
+            <li><a href="tel:9198234333">919.823.4333</a></li>
         </ul>
     </div>
 
@@ -21,7 +21,7 @@
             <h2 class="whitish"></h2>
             <div class="extra-lg-text">
                  <picture>
-  <source class="ducky img-fluid float-left" srcset="{{asset "images/ducky2.webp"}}" type="image/webp">
+  <source srcset="{{asset "images/ducky2.webp"}}" type="image/webp">
   <img class="ducky img-fluid float-left" src="{{asset "images/ducky2.png"}}" alt="OAKwave marketing strategy">
 </picture>
                 <span> we're not <span class="purplish">duckin' around</span></span><br>
@@ -44,11 +44,8 @@
             </div>-->
         </div>
         <div class="col">
-
-            <picture>
-  <source class="shroom img-fluid float-right" srcset="{{asset "images/shitake.webp"}}" type="image/webp">
-  <img class="shroom img-fluid float-right" src="{{asset "images/shitake.png"}}" alt="OAKwave marketing strategy">
-</picture>
+<picture> <source class="shroom img-fluid float-right" srcset="{{asset "images/shitake.webp"}}" type="image/webp"> <source class="shroom img-fluid float-right" srcset="{{asset "images/shitake.png"}}" type="image/png"> <img class="shroom img-fluid float-right" src="{{asset "images/shitake.webp"}}" alt="{{title}}"> </picture>
+        
         </div>
     </div>
 </div>
