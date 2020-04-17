@@ -907,7 +907,7 @@ body {
 }
 
 .footercolms {
-max-width:33.33% !important;
+max-width: 33.33% !important;
 }
 /* -----------------------------------
     4 - Features Styles
@@ -2091,6 +2091,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         max-width: 15%;
     }
 
+.cnav .logo-bg {
+    display: none !important;
+    
+}
+
     .clients-section .clients-logos .logo-holder img {
         max-height: 2rem;
     }
@@ -2150,6 +2155,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         font-size: 4.8rem;
         line-height: 4.8rem;
     }
+    .cnav .logo-bg {
+        display: none !important;
+        
+    }
+
+
 
     .lg-text {
         font-size: 4rem;
@@ -2443,6 +2454,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         left: initial;
         top: 2.3rem;
         right: 3rem;
+    }
+    .cnav .logo-bg {
+        display: none !important;
+        
     }
 
     .main-menu {
@@ -2760,6 +2775,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     .extra-lg-text {
         font-size: 2.8rem;
         line-height: 2.8rem;
+    }
+
+    .cnav .logo-bg {
+        display: none !important;
+        
     }
 
     .features {
