@@ -387,17 +387,11 @@ body {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+.wow {
+    visibility: hidden;
+    
+  }
 
-.cnav .logo-bg {
-    position: absolute;
-    top: 0;
-    left: -8.8rem;
-    width: 9.8rem;
-    height: 6.5rem;
-    background-color: #000;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
 
 .cnav .logo-holder {
     display: inline-block;
