@@ -2097,7 +2097,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
     .clients-section .clients-logos .logo-holder img {
-        max-height: 2rem;
+        max-width: 13.9rem;
     }
 
     .post-box {
@@ -2201,7 +2201,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     }
 
     .clients-section .clients-logos .logo-holder img {
-        max-height: 1.8rem;
+        max-width: 13.9rem;
     }
 
     .process-section {
@@ -2502,7 +2502,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     }
 
     .cnav .logo-holder img {
-        width: 3.4em;
+        max-width: 8.9rem;
     }
 
     .cnav .social-media {
@@ -2545,7 +2545,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     }
 
     .clients-section .clients-logos .logo-holder img {
-        max-height: 1.5rem;
+        max-width: 8.9rem;
     }
 
     .default-content {
@@ -2800,7 +2800,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     }
 
     .clients-section .clients-logos .logo-holder img {
-        max-height: 1.5rem;
+        max-width: 7.9rem;
     }
 
     .footer .contact-info-holder .social-media .social-link-holder a {
