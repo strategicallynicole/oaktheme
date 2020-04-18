@@ -499,11 +499,12 @@ body {
   
 .ducky { 
     position: absolute;
-    opacity: .6;
+    opacity: 1;
     left: 0%;
     top: -20%;
-    max-width: 40%;
+    max-width: 70%;
     width: 40%;
+    z-index: -1;
 
 }
 
@@ -2454,11 +2455,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         top: 2.3rem;
         right: 3rem;
     }
-    .cnav .logo-bg {
-        max-width: 14.9rem;
-        background: #000;
-        
-    }
+  
 
 
 .footercolms {

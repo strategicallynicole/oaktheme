@@ -5,7 +5,7 @@ $(window).on("load", function() {
     // Selecting objects to be animated
     var animatedList1 = '.svcs1, .svcs6, .lg-text, .lg-text span, .boxy .title, .post-box .title, .post-header .title, .boxy .slg-text';
 
-    var animatedList2 = '.svcs2, .svcs3, .shitake, .boxy .text li, .boxy .bottom-text .link, .boxy .bottom-text .text';
+    var animatedList2 = '.bloganime, .svcs2, .svcs3, .shitake, .boxy .text li, .boxy .bottom-text .link, .boxy .bottom-text .text';
 
     var animatedList3 = '.svcs4, .svcs5, .normal-lg-text p, .clients-logos .logo-holder, .text-box .title, .text-box p, .team-photos, .post-box, .post-header, .post-content';
 
