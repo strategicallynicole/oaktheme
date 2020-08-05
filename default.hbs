@@ -16,14 +16,9 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/components/component.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
         <link rel="stylesheet" type="text/css" href="{{asset "css/neus.css"}}" />
-{{> "google-analytics"}}
-{{> "drift"}}
-{{> "fbpixel"}}
-{{> "hubspot"}}
-{{> "quora"}}
+{{> "/vendor/vendors"}}
 
 
-    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
 </head>
 
@@ -54,9 +49,6 @@
     <!-- Custom Script JS -->
     <script src="{{asset "/js/scripts.js"}}"></script>
     <script src="{{asset 'js/bundle.js'}}"></script>
-<!--<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="{{asset 'vendor/jquery-3.1.1.min.js'}}"></script>
-<script type="text/javascript" src="{{asset 'vendor/jquery.pagepiling.js'}}"></script>-->
 
 
     <script>
