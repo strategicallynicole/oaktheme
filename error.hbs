@@ -1,82 +1,10 @@
-{{!--
-This error template is used for all 400/500 errors, except 404, which might occur on your site.
-It's a good idea to keep this template as minimal as possible in terms of both file size and complexity.
-You'll notice that we *don't* use any JavsScript, or ghost_head / ghost_foot in this file.
---}}
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>{{meta_title}}</title>
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="{{asset "main/css/main.css"}}" />
-        <link rel="stylesheet" type="text/css" href="{{asset "error/errors-style.css"}}" />
-        <script src="https://kit.fontawesome.com/dd47f1ac1c.js" crossorigin="anonymous"></script>
-
-</head>
-<body class="error-template">
-    <div id="wrapper">
-        <main id="main">
-            <div class="error-page inner">
-<div class="gandalf">
-  <div class="fireball"></div>
-  <div class="skirt"></div>
-  <div class="sleeves"></div>
-  <div class="shoulders">
-    <div class="hand left"></div>
-    <div class="hand right"></div>
-  </div>
-  <div class="head">
-    <div class="hair"></div>
-    <div class="beard"></div>
-  </div>
-</div>
-               <section style="text-align:center;" class="wrapper">
-                    <div class="error-message">
-                        <h1 class="error-code">{{statusCode}}</h1>
-                        <p class="error-description">{{message}}</p>
-                        <a class="error-link" href="{{@site.url}}">Go to the front page →</a>
-
-
-
-                    </div>
-
-   {{#if errorDetails}}
-                    <div class="error-stack">
-                        <h3>Theme errors</h3>
-                        <ul class="error-stack-list">
-                            {{#foreach errorDetails}}
-                                <li>
-                                    <em class="error-stack-function">{{{rule}}}</em>
-
-                                    {{#foreach failures}}
-                                        <p><span class="error-stack-file">Ref: {{ref}}</span></p>
-                                        <p><span class="error-stack-file">Message: {{message}}</span></p>
-                                    {{/foreach}}
-                                </li>
-                            {{/foreach}}
-                        </ul>
-                    </div>
-                    {{/if}}
-
-
-</section>
-                
-
-
-
-
-
-
-
-                 
-            </div>
-        </main>
-                {{> sidebar}}
-
+{{!< default}}
+<div class="text-center section-padding">
+    <div class="container">
+        <div class="error">
+            <h2 class="display-2">{{statusCode}}</h2>
+            <p>{{message}}</p>
+            <a href="{{@site.url}}" class="btn btn-danger mt-4">GO HOME</a>
+        </div>
     </div>
-</body>
-</html>
+</div>

@@ -1,57 +1,46 @@
-{{!< default}}
-{{!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template --}}
-
-{{!-- Author info --}}
+{{!< default}} 
 {{#author}}
-<header class="author-header">
-    {{#if profile_image}}
-        <img class="author-profile-image" src="{{profile_image}}" alt="{{name}}" />
-    {{/if}}
-    <h1><a href="{{url}}">{{name}}</a></h1>
-    {{#if bio}}
-        <p class="content">{{bio}}</p>
-    {{/if}}
-    <div class="author-meta">
-        {{#if location}}
-        <div class="author-location icon fa-map-pin">{{location}} <span class="bull">&bull;</span></div>
-        {{/if}}
-        <div class="author-stats">
-            {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}} <span class="bull">&bull;</span>
+<!-- Author Srction Wrapper -->
+<div class="author-banner-wrapper">
+    <div class="container-fluid max-width">
+        <div class="author-banner {{#if cover_image}}banner-overlay{{/if}}" {{#if cover_image}}style="background-image: url('{{cover_image}}')"{{/if}}>
+            <div class="author-banner-text">
+                {{#if profile_image}}
+                <div class="author-single-image" data-aos="fade-down">
+                    <img src="{{profile_image}}" alt="{{name}}">
+                </div>
+                {{/if}}
+                <h2 data-aos="fade-down">{{name}}</h2>
+                <p data-aos="fade-up"><span>{{plural ../pagination.total empty='No Post' singular='% Post' plural='% Posts'}} written by {{name}}</span></p>
+                {{#if bio}}
+                <p data-aos="fade-up">{{bio}}</p>
+                {{/if}}
+            </div>
         </div>
-        {{#if website}}
-        <a href="{{url}}" class="icon fa-globe" title="Website"><span class="label">Website</span></a>
-        {{/if}}
-        {{#if twitter}}
-        <a href="{{twitter_url}}" class="icon fa-twitter" title="Twitter"><span class="label">Twitter</span></a>
-        {{/if}}
-        {{#if facebook}}
-        <a href="{{facebook_url}}" class="icon fa-facebook" title="Facebook"><span class="label">Facebook</span></a>
-        {{/if}}
-        <a href="https://feedly.com/i/subscription/feed/{{url absolute="true"}}rss/" class="icon fa-rss" target="_blank" rel="noopener"><span class="label" title="RSS">RSS</span></a>
     </div>
-</header>
+</div>
 {{/author}}
+<div class="container">
+    <div class="author-card-wrapper">
+        <div class="row news-grid">
+            <div class="col-lg-4 col-md-6 grid-item"></div>
+            {{#foreach posts}}
+            <div class="col-lg-4 col-md-6 grid-item py-4">
+                {{> "post-card"}}
+            </div>
+            {{else}}
+            <h3>Post Not found</h3>
+            {{/foreach}}
+        </div>
+    </div>
+    {{#if posts.length}}
+        {{pagination}}
+    {{/if}}
+</div>
 
-{{!-- Posts --}}
-<section>
+<!-- /Author Srction Wrapper -->
 
-    <section class="posts">
-        {{#foreach posts}}
-        <article>
-            {{#if feature_image}}
-            <a href="{{url}}" class="image fit"><img src="{{img_url feature_image}}" alt="{{title}}" /></a>
-            {{/if}}
-            <h3><a href="{{url}}">{{title}}</a></h3>
-            <p>{{excerpt words="33"}}</p>
-            <ul class="actions special">
-                <li><a href="{{url}}" class="button">Full Story</a></li>
-            </ul>
-        </article>
-        {{/foreach}}
-    </section>
 
-</section>
 
-{{!-- Pagination --}}
-{{pagination}}
+{{!-- suscribe --}}
+{{> "subscribe-section"}}

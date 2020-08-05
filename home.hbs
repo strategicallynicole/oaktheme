@@ -1,203 +1,190 @@
-{{!< static}}
-{{> static-header}}
-{{> static-menu}}
-<header class="container-fluid header">
-    <div class="bg"></div>
-    <div class="mouse-scroll"></div>
-    <div class="info-content">
-        <ul>
-            <li><a href="mailto:hello@oakwave.com">hello@oakwave.com</a></li>
-</button>
-            <li><a href="#" data-toggle="modal" data-target="#exampleModal">schedule a consultation</a></li>
-            <li><a href="tel:9198234333">919.823.4333</a></li>
-        </ul>
-    </div>
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
 
-        
+<head>
+    {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    {{!-- Base Meta --}}
+    <title>{{meta_title}} | {{@site.description}}</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{!-- Styles'n'Scripts --}}
+    <!-- CSS Files -->
 
+	<link rel="shortcut icon" type="image/x-icon" href="{{asset 'images/favicon.ico' }}">
+	<link rel="stylesheet" href="{{asset 'vendor/jquery.pagepiling.css' }}" type="text/css" media="all">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{asset "vendor/jquery-ui.min.css"}}" type="text/css" media="all">
 
-    <div class="row">
-        <div class="col">
-            <h2 class="whitish"></h2>
-            <div class="extra-lg-text">
-                 <picture>
-  <source srcset="{{asset "images/ducky2.webp"}}" type="image/webp">
-  <img class="ducky img-fluid float-left" src="{{asset "images/ducky2.png"}}" alt="OAKwave marketing strategy">
-</picture><div class="texting">
-                <span> we're not <span class="purplish">duckin' around</span></span><br>
-                <span>with  marketing &amp; sales strategy</span></div>
-            </div>
-        </div>
-    </div>
-</header>
+    <link rel="stylesheet" type="text/css" href="{{asset "css/neus.css"}}" />
+	    <link rel="stylesheet" type="text/css" href="{{asset "css/bundle.css"}}" />
+
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
+    {{ghost_head}}
+</head>
 
 
+<body>
+	
+	<div class="wrapper">
+		<!-- Your header goes here -->
 
 
-<div class="container-fluid sm-about shitake">
-    <div class="row">
-        <div class="col">
-            <div class="sm-text shitake">we're something actually different than you've experienced.</div>
-            <div class="md-text blackish shitake">we take the <span class="md-text purplish"><strike class="md-text purplish">bull</strike>shit</span>ake out of marketing, sales and strategy to grow your business.</div>
-          <!--  <div class="link-holder">
-                <a class="" href="about.html">More about us</a>
-            </div>-->
-        </div>
-        <div class="col">
-<picture> <source class="shroom img-fluid float-right" srcset="{{asset "images/shitake.webp"}}" type="image/webp"> <source class="shroom img-fluid float-right" srcset="{{asset "images/shitake.png"}}" type="image/png"> <img class="shroom img-fluid float-right" src="{{asset "images/shitake.webp"}}" alt="{{title}}"> </picture>
-        
-        </div>
-    </div>
-</div>
+		<div class="main">
+			<div class="shell">
+				<div class="main__inner">
+{{> "bar"}}
+
+					<div class="main__content">
+						<div class="slider js-slider">
+							<div class="slider__content">
+								<section class="section section--hero js-animation-container">
+									<div class="section__inner">
+										<div class="section__content">
+											<h2 class="oswald section__title animation-spread js-split-new-line js-animation-spread js-init-animation">Hi.<br>We need to talk.</h2><!-- /.section__title -->
+
+											<p class="animation-spread js-split-new-line js-animation-spread js-init-animation">It's about your marketing and sales strategy again... It's been... underwhelming.</p>
+
+											<div class="section__actions js-actions">
+												<a href="#Section-2" class="btn-dark js-scroll-to">Your curiosity compels you.</a>
+
+												<a href="https://www.oakwave.com/about" class="btn-dark">Skip the overview.</a>
+											</div><!-- /.section__actions -->
+										</div><!-- /.section__content -->
+
+										<div class="section__aside">
+
+											    <picture>
+  <source srcset="{{asset "/images/temp/image-1@2x.webp"}}" type="image/webp">
+  <img width="800" src="{{asset "images/temp/image-1@2x.png"}}" alt="OAKwave marketing strategy">
+</picture>
+										</div><!-- /.section__aside -->
+									</div><!-- /.section__inner -->
+								</section><!-- /.section sectionhero -->
+
+								<section class="section section--alt js-animation-container" id="Section-2">
+									<div class="section__inner">
+										<div class="section__content">
+											<h2 class="section__title animation-spread js-split-new-line js-animation-spread js-init-animation">Why do you keep your feelings all bottled up?</h2><!-- /.section__title -->
+
+											<p class="josefin animation-spread js-split-new-line js-animation-spread js-init-animation">You just want a solution that doesn’t give you more headaches than it gives you in actual acquisitions and makes more money for you than it costs.</p>
+
+											<div class="section__actions js-actions">
+												<a href="#Section-3" class="btn-dark js-scroll-to">Release your <br />inner fears.</a>
+
+												<a href="https://www.oakwave.com/about" class="btn-dark">Skip the overview.</a>
+											</div><!-- /.section__actions -->
+										</div><!-- /.section__content -->
+
+										<div class="section__aside">
+
+											  <picture>
+  <source srcset="{{asset "/images/temp/image-2@2x.webp"}}" type="image/webp">
+  <img width="800"  class="metal" src="{{asset "images/temp/image-2@2x.png"}}" alt="OAKwave marketing strategy">
+</picture>
+										</div><!-- /.section__aside -->
+									</div><!-- /.section__inner -->
+								</section><!-- /.section section--hero -->
+
+								<section class="section section--offsets js-animation-container" id="Section-3">
+									<div class="section__inner duckytext">
+										<div class="section__content">
+											<h2 class="section__title animation-spread js-split-new-line js-animation-spread js-init-animation">We help businesses quit duckin’ around </h2><!-- /.section__title -->
+
+											<p class="animation-spread js-split-new-line js-animation-spread js-init-animation">Your revenue is the only KPI that matters. Everything else is just bullshit noise.  We believe in breathing new life, fresh perspectives, and genuine solutions into broken marketing and sales.</p>
+
+											<div class="section__actions js-actions">
+												<a href="#Section-4" class="btn-dark js-scroll-to">Quit playin'.</a>
+
+												<a href="https://www.oakwave.com/about" class="btn-dark">Skip the overview.</a>
+											</div><!-- /.section__actions -->
+										</div><!-- /.section__content -->
+
+										<div class="section__aside">
+
+											
+											  <picture>
+  <source srcset="{{asset "/images/temp/image-3@2x.webp"}}" type="image/webp">
+  <img width="3000"  class="metal ducky" src="{{asset "images/temp/image-3@2x.png"}}" alt="OAKwave marketing strategy">
+</picture>
+				
+										
+										</div><!-- /.section__aside -->
+									</div><!-- /.section__inner -->
+								</section><!-- /.section section--hero -->
+
+								<section class="section section--gutters js-animation-container" id="Section-4">
+									<div class="section__inner">
+										<div class="section__content">
+											<h2 class="section__title animation-spread js-split-new-line js-animation-spread js-init-animation">You’ve been looking for us for a long time.</h2><!-- /.section__title -->
+
+											<p class="animation-spread js-split-new-line js-animation-spread js-init-animation">We're marketers, strategists, workhorses, consultants, and most likely the last folks standing in a zombie apocalypse..  </p>
+
+											<div class="section__actions js-actions">
+												<a href="#Section-5" class="btn-dark js-scroll-to">Find the one.</a>
+
+												<a href="https://www.oakwave.com/about" class="btn-dark">Skip the overview.</a>
+											</div><!-- /.section__actions -->
+										</div><!-- /.section__content -->
+
+										<div class="section__aside">
+
+														
+											  <picture>
+  <source srcset="{{asset "/images/temp/image-4@2x.webp"}}" type="image/webp">
+  <img width="800"  class="metal" src="{{asset "images/temp/image-4@2x.png"}}" alt="OAKwave marketing strategy">
+</picture>
+				
+										</div><!-- /.section__aside -->
+									</div><!-- /.section__inner -->
+								</section><!-- /.section section--hero -->
 
 
+								<section class="section section--different js-animation-container" id="Section-5">
+									<div class="section__outer">
+										<div class="section__head">
+											<h2 class="section__title animation-spread js-split-new-line js-animation-spread js-init-animation">We’re good at what everyone says just says they’re good at.</h2><!-- /.section__title -->
+										</div><!-- /.section__head -->
 
-<div class="container-fluid other-info">
-    <div class="row">
-        <div class="col">
-            <div class="row-title">offerings sampler<br/>
-            <span style="font-size: 1.5rem; font-family: 'gilroy-light'; font-weight: 400; color: #fff;">just a taste of what we can do for your business</span></div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="info-box">
+										<div class="section__body">
+											<div class="section__aside">
 
-                <div class="icon services-list svcs3">
-                    <picture class="img-fluid">
-                        <source class="img-fluid" srcset="{{asset "images/vision.webp"}}" type="image/webp">
-                        <img class="img-fluid svcs4" src="{{asset "images/vision.png"}}" alt="OAKwave marketing strategy">
-                    </picture>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="info-box">
-                <div class="icon services-list svcs2">
-                    <picture class="img-fluid">
-                        <source class="img-fluid" srcset="{{asset "images/diamond.webp"}}" type="image/webp">
-                        <img class="img-fluid svcs5" src="{{asset "images/diamond.png"}}" alt="OAKwave marketing strategy">
-                    </picture>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="info-box">
-                <div class="icon services-list">
-                    <picture class="img-fluid">
-                        <source class="img-fluid" srcset="{{asset "images/bomb.webp"}}" type="image/webp">
-                            <img class="img-fluid svcs1 " src="{{asset "images/bomb.png"}}" alt="OAKwave marketing strategy">
-                     </picture>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="info-box-lower">
-                <div class="title">marketing, sales, and growth strategy</div>
-                <div class="text">Do you know how parents always say, "I wish there was a manual on parenting my kid!" That's kind of what our strategies are, except for your marketing, sales, and business growth. Go ahead, try to find a better marketing, sales, or growth strategy, it's right next to the Fountain of Youth and anything marketed as "free" that's actually free.</div>            
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="info-box-lower">
-                <div class="title">brand strategy, positioning, and voice</div>
-                <div class="text">Unifying your organization behind a single voice, position, slogan, and value proposition is critical to making efficient use of your marketing efforts. We make this process painless and actually fun. Your brand is your foundation and a weak foundation makes for a shaky house.</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="info-box-lower">
-                <div class="title">content rebirth</div>
-                <div class="text">This is not your intern's SEO-packed, boring Encylopedia entry...
-    Your content needs to grab the attention of your target market and hold onto it. This takes a special blend of sales, marketing, and wordsmithing. We believe a hundred amazing words will change the world for your business, not a hundred mediocre articles.  </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="row-title">other services<br/>
-                <span style="font-size: 1.5rem; font-family: 'gilroy-light'; font-weight: 400; color: #fff;">we also offer: CMO-on-demand/marketing decision services, design, campaign execution, sales strategy, sales enablement via asset production, pitch development, martech stack design, salestech stack design, and website strategy.</span>
-            </div>
-        </div>
-    </div>
-</div>
+																						  <picture>
+  <source srcset="{{asset "/images/temp/image-5@2x.png"}}" type="image/webp">
+  <img width="800"  class="cutie" src="{{asset "images/temp/image-5@2x.png"}}" alt="OAKwave marketing strategy">
+</picture>
+											</div><!-- /.section__aside -->
+
+											<div class="section__content">
+												<p class="animation-spread js-split-new-line js-animation-spread js-init-animation">Hands down, we are the most resourceful, creative, problem-solving marketing geniuses you will ever find. We’re really, really good at campaign concepts, branding, content, and strategy... and really, really bad at corporate frills, small talk, and sending Christmas cards.</p>
+
+												<div class="section__actions js-actions">
+													<a href="https://www.oakwave.com/about" class="btn-dark">Schedule a Call.</a>
+
+													<a href="https://www.oakwave.com/about" class="btn-dark">Learn More.</a>
+												</div><!-- /.section__actions -->
+											</div><!-- /.section__content -->
+										</div><!-- /.section__body -->
+									</div><!-- /.section__outer -->
+								</section><!-- /.section section--hero -->
+							</div><!-- /.slider__content -->
+						</div>
+					</div><!-- /.main__content -->
+				</div><!-- /.main__inner -->
+			</div><!-- /.shell -->
+		</div><!-- /.main -->
 
 
+		<!-- Your footer goes here -->
 
-<div class="blog container container-fluid blog-section">
-            <div class="row">
-                    <h2>our meandering opinions</h2><br /><br />
-            </div>  
-                
-        <div class="row">
-			
+	</div><!-- /.wrapper -->
 
-            {{#get "posts" filter="featured:false" limit="3" include="tags"}}
-                 {{#foreach posts}}
-			        <div class="bloganime col" data-aos="fade-right">
-				        {{#if feature_image}}
-                            <div class="col">                                
-                             <a href="{{url}}">	   <img src="{{img_url feature_image}}" alt="{{title}}" width="100%"></a>
-					        </div>            
-                        {{/if}} 
-					
-	    				<div class="col">
-						    <div class="blog-column">
-						<a href="{{url}}" class="btn-link">	    <h4 class="purplish">{{title}}</h4></a>
-							    <ul class="blog-detail list-inline"> 
-							        {{#if primary_tag}}
-                                        {{#primary_tag}}	
-                                            <li>
-                                              <i class="fa fas fa-tag"></i>
-                                                <a style="font-weight: normal !important; font-family: gilroy-light !important;" href="{{url}}" class="btn-link">  {{name}}</a>
-                                            </li>  
-                                        {{/primary_tag}}
-                                    {{/if}}
-								    <li><i class="fa far fa-calendar-check"></i>&nbsp;{{date}}</li> 
-                                    <li><i class="fa far fa-clock"></i>&nbsp;{{reading_time}}</li>
-							    </ul> 
-							    <p>{{excerpt words="33"}}</p>
-							    <a href="{{url}}" class="btn-link">read more</a>
-						    </div>
-					    </div>
-					
-                    </div>
-		   
-		   {{/foreach}}
-           {{/get}}
-           
-            
-    </div>
-  
-    <div style="padding-top: 3rem;" class="row">
-        <div class="col center-text text-center">
-    <div class="btn-holder">
-          <a href="{{@site.url}}/blog"class="btn lm-btn black">view full blog</a>
-            </div>
+	<script src="{{asset 'vendor/jquery-3.1.1.min.js'}}"></script>
+<script type="text/javascript" src="{{asset 'vendor/jquery.pagepiling.js'}}"></script>
+<script type="text/javascript" src="{{asset 'vendor/jquery-ui.min.js'}}"></script>
+<script src="{{asset 'js/bundle.js'}}"></script>
 
-            </div>
-    </div>
-</div>
-
-
-
-<div class="container-fluid default-content">
-    <div class="row">
-        <div class="col">
-            <div class="md-text whitish">
-                <h2 class="md-text whitish"><br />we're marketing, sales, and business <span class="md-text purplish">wartime commanders</span>...</h2><br>
-                <h2 class="md-text whitish">and the <span class="purplish">war is here</span>.</h2><br>
-            </div>
-            <div class="btn-holder">
-          <a href="#" data-toggle="modal" class="btn lm-btn" data-target="#exampleModal">schedule a call</a>
-            </div>
-        </div>
-           <div class="col">
-             <picture>
-  <source srcset="{{asset "images/chess.webp"}}" type="image/webp">
-  <img class="chess img-fluid float-left" src="{{asset "images/chess.png"}}" alt="OAKwave marketing strategy">
-</picture>         </div>
-    </div>             {{> modal}}
-
-</div>
+</body>
+</html>

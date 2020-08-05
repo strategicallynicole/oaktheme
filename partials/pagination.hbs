@@ -1,11 +1,15 @@
-<footer>
-    <nav class="pagination" role="navigation">
-        {{#if prev}}
-        <a class="lm-btn btn-small small page circlemesilly previous newer-posts" href="{{page_url prev}}">Newer Posts</a>
-        {{/if}}
-        <span class="page-number">Page {{page}} of {{pages}}</span>
-        {{#if next}}
-        <a class="btn secondary small btn-small page next older-posts lm-btn" href="{{page_url next}}">Older Posts</a>
-        {{/if}}
-    </nav>
-</footer>
+<!-- pagination section -->
+<div class="pagination-section">
+    <div class="newer-post">
+        <a  href="{{page_url prev}}"><i class="neubtn fa fa-angle-double-left"></i><span class="hide">NEWER POSTS</span></a>
+    </div>
+    <div class="pagi-number">
+        <span class="active">{{page}}</span>
+        <span>/</span>
+        <span>{{pages}}</span>
+    </div>
+    <div class="older-post">
+        <a href="{{page_url next}}"><i class="neubtn fa fa-angle-double-right"></i><span class="hide">OLDER POSTS</span></a>
+    </div>
+</div>
+<!-- /pagination section -->

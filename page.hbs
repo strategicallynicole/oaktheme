@@ -1,45 +1,45 @@
-{{!< static}}
-{{#post}}
-{{> static-header}}
-{{> static-menu}}
-<header class="container-fluid header">
-    <div class="bg"></div>
-    <div class="mouse-scroll"></div>
-    <div class="info-content">
-        <ul>
-            <li>hello@oakwave.com</li>
-</button>
-            <li><a href="#" data-toggle="modal" data-target="#exampleModal">schedule a consultation</a></li>
-            <li>919.823.4333</li>
-        </ul>
-    </div>
-
-   
-
-
-    <div class="row">
-        <div class="col">
-            <h2 class="whitish"></h2>
-            <div class="extra-lg-text">
-                <span> {{title}}</span>
-                <span>    {{#if feature_image}}
-    <div class="image main"><img src="{{img_url feature_image}}" alt="{{title}}" /></div>
-    {{/if}}</span>
+{{!< default}} 
+{{#post}} 
+<!-- Single Post Wrapper -->
+<div class="single-blog-sec">
+    <div class="author-banner {{#if feature_image}}banner-overlay{{else}}banner-split{{/if}}" {{#if feature_image}}
+        style="background-image:url({{feature_image}})" {{/if}}>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <h1>{{title}}</h1>
+                    <div class="post-meta d-flex flex-wrap justify-content-between align-items-end mt-5">
+                        <div>
+                            <p>
+                                {{tags separator=", " limit="2"}}
+                            </p>
+                            <p><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD
+                                    MMMM, YYYY"}}</time></p>
+                        </div>
+                        <div class="">
+                            <p>{{reading_time}}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</header>
-
-
-
-
-<div class="container-fluid default-content">
-    <div class="row">
-        <div class="col">
-{{content}}
+    <div class="single-blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="sb-content-wrap blog-single-2">
+                        <div class="single-post-content">
+                            {{content}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-</div>
-
-
+<!-- /Single post Wrapper -->
 {{/post}}
+
+{{!-- suscribe --}}
+{{> "subscribe-section"}}
