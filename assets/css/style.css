@@ -4014,7 +4014,16 @@ input[type="submit"] {
 button.owl-dot.active {
   display: none; }
 
+button.owl-dot {
+  display: none; }
+
 .featured-slider.owl-carousel .owl-nav button.disabled {
+  display: none; }
+
+.featured-slider.owl-carousel .owl-dots .owl-dot.active {
+  display: none; }
+
+.featured-slider.owl-carousel .owl-dots {
   display: none; }
 
 /*# sourceMappingURL=style.css.map */
