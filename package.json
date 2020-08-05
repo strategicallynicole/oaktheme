@@ -1,18 +1,17 @@
 {
     "name": "delas",
-    "description": "Delas is dark resposive portfolio blog theme.",
+    "description": "oakwave",
     "demo": "https://delas.electronthemes-ghost.com",
     "version": "3.0.0",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
     },
-    "contentapikey": "351bec9e19e44106d1730a23b1",
     "license": "MIT",
     "author": {
-        "name": "Electronthemes",
-        "email": "electronthemes@gmail.com",
-        "url": "http://electronthemes.com"
+        "name": "nicole choman",
+        "email": "n@oakwave.com",
+        "url": ""
     },
     "gpm": {
         "type": "theme",
