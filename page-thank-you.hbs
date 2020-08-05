@@ -1,46 +1,34 @@
-{{!< static}}
-{{#post}}
-<script>qp('track', 'GenerateLead');</script>
-{{> static-header}}
-{{> static-menu}}
-<header class="container-fluid header">
-    <div class="bg"></div>
-    <div class="mouse-scroll"></div>
-    <div class="info-content">
-        <ul>
-            <li>hello@oakwave.com</li>
-</button>
-            <li><a href="#" data-toggle="modal" data-target="#exampleModal">schedule a consultation</a></li>
-            <li>919.823.4333</li>
-        </ul>
-    </div>
-
-      <!--   <picture>
-  <source class="ducky img-fluid float-left" srcset="{{asset "images/ducky2.webp"}}" type="image/webp">
-  <img class="ducky img-fluid float-left" src="{{asset "images/ducky2.png"}}" alt="OAKwave marketing strategy">
-</picture>-->
-
-
-    <div class="row">
-        <div class="col">
-            <h2 class="whitish"></h2>
-            <div class="extra-lg-text">
-                <span> <span class="purplish">Thank you for reaching out!</span></span><br>
+{{!< default}} 
+{{#post}} 
+<!-- Single Post Wrapper -->
+<div class="single-blog-sec">
+    <div class="author-banner {{#if feature_image}}banner-overlay{{else}}banner-split{{/if}}" {{#if feature_image}}
+        style="background-image:url({{feature_image}})" {{/if}}>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <h1>Thank you!</h1>
+              
+                </div>
             </div>
         </div>
     </div>
-</header>
-
-
-
-
-<div class="container-fluid default-content">
-    <div class="row">
-        <div class="col">
-{{content}}
+    <div class="single-blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="sb-content-wrap blog-single-2">
+                        <div class="single-post-content">
+                            {{content}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-</div>
-
-
+<!-- /Single post Wrapper -->
 {{/post}}
+
+{{!-- suscribe --}}
+{{> "subscribe-section"}}
