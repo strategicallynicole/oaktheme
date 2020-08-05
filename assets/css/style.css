@@ -2,17 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald");
 @import url("https://fonts.googleapis.com/css2?family=Raleway");
-
-
-button.owl-dot.active {
-    display: none;
-}
-
-.featured-slider.owl-carousel .owl-nav {
-    display: none;
-}
 /*------------------------------------------------------------------
-
 Common Stylesheet
 
 Project:   Delas - Responsive Ghost Blogging Theme
@@ -4020,5 +4010,11 @@ input[type="submit"] {
 
 .section__inner.duckytext {
   padding-top: 0px !important; }
+
+button.owl-dot.active {
+  display: none; }
+
+.featured-slider.owl-carousel .owl-nav button.disabled {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

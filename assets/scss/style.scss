@@ -124,3 +124,11 @@ background-repeat: repeat-y;
 .section__inner.duckytext {
     padding-top: 0px !important;
 }
+
+button.owl-dot.active {
+    display: none;
+}
+
+.featured-slider.owl-carousel .owl-nav button.disabled {
+    display: none;
+}
