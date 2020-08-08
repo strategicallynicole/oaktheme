@@ -1,3 +1,7 @@
+.dragon {
+    margin-top: -75px;
+}
+
 /* ------------------------------------------------------------ *\
   Vendor
 \* ------------------------------------------------------------ */
@@ -839,7 +843,7 @@ blockquote:last-child {
         position: relative !important;
     }
     .cutie {
-        margin-top: -10px;
+        margin-top: -100px;
     }
 
 

@@ -39,6 +39,9 @@ Version: 1.0.0
 /* ----------------------------------------------------------------
                            Responsive
 -----------------------------------------------------------------*/
+img.dragon {
+    margin-top: -75px;
+}
 @media all and (min-width: 1199px) {
   .main-menu .mainmenu-list {
     opacity: 1 !important;
