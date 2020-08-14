@@ -11,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{!-- Styles'n'Scripts --}}
     <!-- CSS Files -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"}}" />
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"}}" />
-    <link rel="stylesheet" type="text/css" href="css/components/component.css"}}" />
-    <link rel="stylesheet" type="text/css" href="css/style.css"}}" />
-        <link rel="stylesheet" type="text/css" href="css/neus.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/components/component.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+        <link rel="stylesheet" type="text/css" href="{{asset "css/neus.css"}}" />
 {{> "vendor/vendors"}}
     {{> "vendor/fontawesome"}}
 
@@ -25,8 +25,8 @@
 
 <body class="{{body_class}}">
     <picture>
-  <source srcset="/images/brand/accents/swirl-smaller.webp"}}" type="image/webp">
-  <img width="3000"  class="swirlone" src="/images/brand/accents/swirl-smaller-red.png"}}" alt="OAKwave marketing strategy">
+  <source srcset="{{asset "/images/brand/accents/swirl-smaller.webp"}}" type="image/webp">
+  <img width="3000"  class="swirlone" src="{{asset "/images/brand/accents/swirl-smaller-red.png"}}" alt="OAKwave marketing strategy">
 </picture>	
 
     <div class="relative">
@@ -40,15 +40,15 @@
     {{!-- jQuery + Fitvids, which makes all video embeds responsive --}}
     <!--++++++++ Start footer script section ++++++++-->
     <!-- jQuery JS -->
-    <script src="js/jquery-3.3.1.min.js"}}"></script>
+    <script src="{{asset "js/jquery-3.3.1.min.js"}}"></script>
     <script type="text/javascript" src="{{asset 'vendor/jquery-ui.min.js'}}"></script>
 
     <!-- Bootstrap JS -->
-    <script src="/js/bootstrap.min.js"}}"></script>
+    <script src="{{asset "/js/bootstrap.min.js"}}"></script>
     <!-- Plugins JS -->
-    <script src="/js/plugins.js"}}"></script>
+    <script src="{{asset "/js/plugins.js"}}"></script>
     <!-- Custom Script JS -->
-    <script src="/js/scripts.js"}}"></script>
+    <script src="{{asset "/js/scripts.js"}}"></script>
     <script src="{{asset 'js/bundle.js'}}"></script>
 
 
