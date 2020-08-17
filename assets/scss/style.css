@@ -105,19 +105,9 @@ Version: 1.0.0
 /* ----------------------------------------------------------------
                            Typography
 -----------------------------------------------------------------*/
-@font-face {
-  font-family: 'AviatorSG';
-  src: url("../fonts/");
-  src: url("../fonts/?#iefix") format("embedded-opentype"), url("../fonts/AviatorSG-Light.woff2") format("woff2"), url("../fonts/AviatorSG-Light.woff") format("woff"), url("../fonts/AviatorSG-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
-html {
-  height: 100%; }
 
-body {
-  font-family: "Roboto", sans-serif;
-  height: 100%;
-  background-color: #1e272e; }
+
+
 
 a:active,
 a:focus,

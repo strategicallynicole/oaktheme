@@ -8,17 +8,22 @@ body {
 }
 
 body {
-	min-width: 320px;
-	font-family: 'Josefin Sans';
-	font-weight: $font-weight-base;
-	font-size: $font-size-base;
-	line-height: $line-height-base;
-	color: #000;
-
+    min-height: 100%;
+    @include bg-grad;
+    @include bg-size-cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: $light-text-on-dark-bg;
+    font-family: 'Josefin Sans';
+	font-weight: 100;
+	
 	@include breakpoint-down(mobile) {
 		font-size: 16px;
 	}
-}
+    }
+
+	
+
 
 a {
 	color: inherit;

@@ -23,6 +23,11 @@
     border: none !important;
 }
   @mixin bg-grad {
+    background: radial-gradient(54.85% 46.25% at 50% 50%, #373A42 0%, #000000 100%);
+    @include bg-size-cover;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    color: $light-text-on-dark-bg;
 
     }
   
@@ -62,7 +67,7 @@
       background-repeat: no-repeat !important;
       background-attachment: fixed !important;
       color: $light-text-on-dark-bg;
-      font-family: 'Raleway';
+      font-family: 'Josefin Sans';
       font-weight: 100;
     }
   

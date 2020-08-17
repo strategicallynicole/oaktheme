@@ -2836,7 +2836,7 @@ a {
 /************** Tag Section *************/
 @media all and (max-width: 767px) {
   .footer-tag .single-tag {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     text-align: center; } }
 @media (max-width: 767px), screen and (max-width: 812px) and (orientation: landscape) {
@@ -4013,19 +4013,7 @@ input[type="submit"] {
 button.owl-dot.active {
   display: none; }
 
-button.owl-dot {
-  display: none; }
-
 .featured-slider.owl-carousel .owl-nav button.disabled {
   display: none; }
-
-.featured-slider.owl-carousel .owl-dots .owl-dot.active {
-  display: none; }
-
-.featured-slider.owl-carousel .owl-dots {
-  display: none; }
-
-img.dragon {
-  margin-top: 70px; }
 
 /*# sourceMappingURL=style.css.map */
